@@ -1,0 +1,389 @@
+/* ==========================================================================
+   Header Styles (Desktop & Sticky)
+   ========================================================================== */
+
+.ct_header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1020;
+    background-color: #fff;
+    padding: 24px 0;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow-x: hidden;
+}
+
+/* Sticky Header on Scroll */
+.ct_header.ct_sticky {
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    padding: 14px 0;
+}
+
+.ct_header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+/* Left: Logo container */
+.ct_header_left {
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
+    min-width: 180px;
+}
+
+.ct_header_logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.ct_header_logo img {
+    height: 44px;
+    width: auto;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.ct_header_logo:hover img {
+    transform: scale(1.02);
+}
+
+/* Center: Navigation Menu on Desktop (>= 1200px) */
+.ct_nav_menu {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct_nav_list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+}
+
+.ct_nav_item {
+    list-style: none;
+    white-space: nowrap;
+}
+
+.ct_nav_link {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    padding: 6px 0;
+    transition: color 0.25s ease;
+    text-decoration: none;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.ct_nav_link:hover {
+    color: var(--brand-blue);
+}
+
+/* Right: Action container (Contact Button & Hamburger) */
+.ct_header_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    min-width: 180px;
+    gap: 16px;
+}
+
+/* Header Contact Button */
+.ct_header_btn {
+    position: relative;
+    background-color: var(--brand-blue);
+    color: #ffffff !important;
+    padding: 10px 28px;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--brand-blue);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.ct_header_btn span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+/* White overlay */
+.ct_header_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_header_btn:hover::before {
+    width: 100%;
+}
+
+.ct_header_btn:hover {
+    color: var(--brand-blue) !important;
+    border-color: var(--brand-blue);
+}
+
+.ct_header_btn:hover span {
+    color: var(--brand-blue) !important;
+}
+
+/* Hamburger Toggle Button (Desktop hidden) */
+.ct_menu_toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    z-index: 1030;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.ct_menu_toggle:focus {
+    outline: none;
+}
+
+.ct_menu_toggle span {
+    display: block;
+    width: 26px;
+    height: 2.5px;
+    background-color: var(--primary-color);
+    border-radius: 3px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-origin: center;
+}
+
+/* Hamburger active transformation */
+.ct_menu_toggle.active span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+
+.ct_menu_toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ct_menu_toggle.active span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+
+/* Close button inside drawer (hidden on desktop) */
+.ct_drawer_header {
+    display: none;
+}
+
+.ct_drawer_btn_wrap {
+    display: none;
+}
+
+.ct_nav_backdrop {
+    display: none;
+}
+
+/* ==========================================================================
+   Header Responsive Styles (<= 1199px)
+   Right Side Smooth Drawer Menu
+   ========================================================================== */
+
+@media (max-width: 1199px) {
+    .ct_header {
+        padding: 16px 0;
+    }
+
+    .ct_header.ct_sticky {
+        padding: 12px 0;
+    }
+
+    .ct_header_left {
+        min-width: auto;
+    }
+
+    .ct_header_right {
+        min-width: auto;
+    }
+
+    .ct_header_logo img {
+        height: 38px;
+    }
+
+    /* Hide desktop Contact button from right bar on <=1199px */
+    .ct_header_right .ct_header_btn {
+        display: none;
+    }
+
+    /* Show hamburger toggle button */
+    .ct_menu_toggle {
+        display: flex;
+    }
+
+    /* Right-side Sliding Drawer */
+    .ct_nav_menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        left: auto;
+        width: 320px;
+        max-width: 100%;
+        height: 100vh;
+        height: 100dvh;
+        background-color: #ffffff;
+        box-shadow: -10px 0 35px rgba(0, 0, 0, 0.16);
+        padding: 24px 24px 36px 24px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        transition: 0.4s ease all;
+        z-index: 99999;
+        overflow-y: auto;
+    }
+
+    .ct_nav_menu.ct_menu_open {
+        right: 0px;
+    }
+
+    /* Drawer Header */
+    .ct_drawer_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #eef2f6;
+        width: 100%;
+    }
+
+    .ct_drawer_logo img {
+        height: 34px;
+        width: auto;
+    }
+
+    .ct_drawer_close {
+        background: #f3f6f9;
+        border: none;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 22px;
+        line-height: 1;
+        color: var(--primary-color);
+        cursor: pointer;
+        transition: all 0.25s ease;
+    }
+
+    .ct_drawer_close:hover {
+        background-color: var(--brand-coral);
+        color: #ffffff;
+        transform: rotate(90deg);
+    }
+
+    /* Backdrop */
+    .ct_nav_backdrop {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        height: 100dvh;
+        background-color: rgba(10, 20, 30, 0.5);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.35s ease, visibility 0.35s ease;
+        z-index: 1040;
+    }
+
+    .ct_nav_backdrop.ct_show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Mobile Nav List */
+    .ct_nav_list {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 6px;
+        width: 100%;
+        margin-bottom: 24px;
+        white-space: normal;
+    }
+
+    .ct_nav_item {
+        width: 100%;
+        white-space: normal;
+    }
+
+    .ct_nav_link {
+        display: block;
+        width: 100%;
+        padding: 10px 12px;
+        font-size: 15px;
+        font-weight: 600;
+        border-radius: 8px;
+        color: #222222;
+        transition: all 0.2s ease;
+        white-space: normal;
+    }
+
+    .ct_nav_link:hover {
+        background-color: #f0f7fd;
+        color: var(--brand-blue);
+        padding-left: 16px;
+    }
+
+    /* Mobile Drawer Contact Button */
+    .ct_drawer_btn_wrap {
+        display: block;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    .ct_drawer_btn_wrap .ct_header_btn {
+        display: flex;
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}

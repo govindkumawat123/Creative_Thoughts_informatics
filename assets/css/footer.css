@@ -1,0 +1,338 @@
+/* ==========================================================================
+   Creative Thoughts Informatics - Footer Section Styles
+   ========================================================================== */
+
+.ct_footer_section {
+    background-color: transparent;
+    color: #ffffff;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+/* Horizontal Line between Top Row (Logo & Social Media) and Links Grid */
+.ct_footer_top_line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+/* Row 1: Brand Info & Social Media */
+.ct_footer_top_row {
+    padding-bottom: 0;
+}
+
+.ct_footer_logo_wrap {
+    display: inline-block;
+    margin-bottom: 18px;
+    text-decoration: none;
+}
+
+.ct_footer_logo {
+    height: 44px;
+    width: auto;
+    display: block;
+}
+
+.ct_footer_tagline {
+    font-size: 20px;
+    line-height: 32px;
+    color: rgba(255, 255, 255, 1);
+    max-width: 380px;
+    margin-bottom: 0;
+}
+
+.ct_footer_social_title {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.ct_footer_social_sub {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 18px;
+}
+
+.ct_footer_social_links {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ct_social_icon_btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    color: #1E7EB8;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+}
+
+.ct_social_icon_btn:hover {
+    background-color: #ffffff;
+    color: #111111;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Row 2: 4 Link Columns */
+.ct_footer_links_grid {
+    padding-bottom: 15px;
+}
+
+.ct_footer_col_title {
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.ct_footer_nav_list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.ct_footer_nav_list li {
+    margin-bottom: 12px;
+}
+
+.ct_footer_nav_list li a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.ct_footer_nav_list li a:hover {
+    color: #ffffff;
+    padding-left: 3px;
+}
+
+/* Middle Horizontal Divider Line (Below 4 Columns & Above Get In Touch) */
+.ct_footer_mid_line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.22);
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+
+/* Row 3: Contact Info & AI Badges */
+.ct_footer_bottom_contact_row {
+    padding-bottom: 40px;
+}
+
+.ct_footer_contact_list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.ct_footer_contact_list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 14.5px;
+}
+
+.ct_footer_contact_list li a {
+    color: rgba(255, 255, 255, 0.88);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ct_footer_contact_list li a:hover {
+    color: #ffffff;
+}
+
+.ct_contact_icon {
+    font-size: 16px;
+    color: #ffffff;
+    width: 16px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.ct_footer_ai_wrap {
+    display: inline-block;
+}
+
+.ct_footer_ai_title {
+    font-size: 20px;
+    line-height: 1.4;
+    color: #ffffff;
+    margin-bottom: 14px;
+}
+
+.ct_footer_ai_badges {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ct_ai_badge_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.ct_ai_badge_box {
+    width: 48px;
+    height: 48px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #111111;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+}
+
+.ct_ai_badge_box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.ct_ai_badge_box svg {
+    display: block;
+}
+
+.ct_ai_badge_label {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+/* Row 4: Bottom Copyright Bar (No top border) */
+.ct_footer_bottom_bar {
+    padding-top: 10px;
+    border-top: none;
+}
+
+.ct_copyright_text {
+    font-size: 13.5px;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 0;
+}
+
+.ct_legal_links {
+    font-size: 13.5px;
+}
+
+.ct_legal_links a {
+    color: rgba(255, 255, 255, 0.78);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ct_legal_links a:hover {
+    color: #ffffff;
+}
+
+.ct_legal_sep {
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0 8px;
+}
+
+/* ==========================================================================
+   Responsive Footer styles
+   ========================================================================== */
+
+@media (max-width: 991px) {
+    .ct_footer_section {
+        padding-top: 35px;
+    }
+
+    .ct_footer_top_line {
+        margin-top: 30px;
+        margin-bottom: 35px;
+    }
+
+    .ct_footer_top_row {
+        padding-bottom: 0;
+    }
+
+    .ct_footer_links_grid {
+        padding-bottom: 10px;
+    }
+
+    .ct_footer_mid_line {
+        margin-top: 15px;
+        margin-bottom: 35px;
+    }
+
+    .ct_footer_bottom_contact_row {
+        padding-bottom: 25px;
+    }
+
+    .ct_footer_ai_wrap {
+        margin-top: 20px;
+        text-align: left !important;
+    }
+
+    .ct_footer_ai_badges {
+        justify-content: flex-start !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .ct_footer_section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .ct_footer_top_line {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+    .ct_footer_top_row {
+        padding-bottom: 0;
+    }
+
+    .ct_footer_tagline {
+        font-size: 14px;
+    }
+
+    .ct_footer_col_title {
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+
+    .ct_footer_nav_list li a {
+        font-size: 13.5px;
+    }
+
+    .ct_footer_mid_line {
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+
+
+
+
+
+    .ct_copyright_text {
+        font-size: 12.5px;
+    }
+
+    .ct_legal_links {
+        font-size: 12.5px;
+        margin-top: 8px;
+    }
+}

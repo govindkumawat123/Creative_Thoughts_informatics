@@ -1,0 +1,1796 @@
+/* ==========================================================================
+   Creative Thoughts Informatics - Consolidated Responsive Stylesheet
+   ========================================================================== */
+
+/* ==========================================================================
+   1. Device & Range Specific Media Queries
+   ========================================================================== */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1399px) {
+    .ct_badge_top_right {
+        top: 20px;
+        right: -20px;
+    }
+
+    .ct_badge_bottom_right {
+        right: -25px;
+    }
+}
+
+@media (max-width: 1399px) and (min-width: 1200px) {
+    .ct_turn_business_content_col {
+        padding-left: max(24px, calc(100% - 558px));
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .ct_turn_business_content_col {
+        padding-left: max(20px, calc(100% - 468px));
+        padding-right: 25px;
+    }
+
+    .ct_turn_business_img {
+        max-width: 100%;
+    }
+}
+
+/* ==========================================================================
+   2. Large Desktops & Laptops (max-width: 1199px)
+   ========================================================================== */
+@media (max-width: 1199px) {
+
+    /* Hero Section */
+    .ct_hero_title {
+        font-size: 42px;
+    }
+
+    .ct_hero_desc {
+        font-size: 16px;
+    }
+
+    .ct_stat_num {
+        font-size: 38px;
+    }
+
+    .ct_badge_top_right {
+        top: 15px;
+        right: -15px;
+        min-width: 160px;
+        padding: 12px 18px;
+    }
+
+    .ct_badge_bottom_left {
+        bottom: 25px;
+        left: -20px;
+        min-width: 165px;
+        padding: 12px 18px;
+    }
+
+    .ct_badge_bottom_right {
+        bottom: 35px;
+        right: -20px;
+        min-width: 165px;
+        padding: 12px 18px;
+    }
+
+    .ct_hero_services_bar {
+        margin-top: 36px;
+    }
+
+    .ct_hero_service_divider {
+        margin: 0 10px;
+    }
+
+    .ct_fs_52 {
+        font-size: 45px !important;
+    }
+
+    /* Technology Built Section */
+    .ct_tech_card {
+        padding: 16px 24px 38px 24px;
+        min-height: 440px;
+    }
+
+    .ct_tech_card_title {
+        font-size: 26px;
+    }
+
+    .ct_img_experienced {
+        height: 150px;
+    }
+
+    .ct_img_end_to_end {
+        height: 155px;
+    }
+
+    .ct_img_business {
+        height: 140px;
+    }
+
+    /* We Solve Problems Section */
+    .ct_stack_card_num {
+        font-size: 42px;
+    }
+
+    .ct_stack_card_title {
+        font-size: 24px;
+    }
+
+    /* Horizontal Services Section */
+    .ct_horiz_card {
+        flex: 0 0 400px;
+        width: 400px;
+        padding: 0 32px;
+    }
+
+    .ct_horiz_card_img_wrap {
+        height: 200px;
+    }
+
+    /* Why Businesses Choose Us Section */
+    .ct_why_choose_title {
+        font-size: 36px;
+    }
+
+
+
+    /* Technology That Fits The Job Section */
+    .ct_fits_title {
+        font-size: 42px;
+    }
+
+    .ct_fits_card {
+        padding: 22px 20px;
+    }
+
+    .ct_fits_name {
+        font-size: 14px;
+    }
+
+    /* Industry Section */
+    .ct_industry_tabs_wrap {
+        flex: 0 0 38%;
+        max-width: 38%;
+    }
+
+    .ct_industry_slider_wrap {
+        flex: 0 0 60%;
+        max-width: 60%;
+    }
+
+    .ct_industry_card {
+        min-height: 460px;
+        padding: 28px 30px;
+    }
+
+    .ct_industry_feature_list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* What Our Clients Say Section */
+    .ct_clients_say_head {
+        margin-bottom: 48px;
+    }
+
+    .ct_clients_stats_wrap {
+        margin-bottom: 60px;
+    }
+
+    .ct_clients_stat_num {
+        font-size: 44px;
+        margin-bottom: 14px;
+    }
+
+    .ct_clients_stat_label {
+        font-size: 16px;
+    }
+
+    .ct_clients_grid {
+        gap: 16px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .ct_clients_col {
+        gap: 16px;
+        min-width: 0;
+    }
+
+    .ct_clients_col:nth-child(2) {
+        margin-top: 45px;
+    }
+
+    .ct_client_quote_card {
+        padding: 24px 18px 20px 18px;
+        min-height: 350px;
+    }
+
+    .ct_client_card_top {
+        margin-bottom: 35px;
+        gap: 8px;
+    }
+
+    .ct_client_quote_icon {
+        width: 38px;
+    }
+
+    .ct_client_tags {
+        gap: 6px;
+    }
+
+    .ct_client_tag {
+        font-size: 11px;
+        padding: 3px 8px;
+    }
+
+    .ct_client_quote_text {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
+    .ct_client_author {
+        padding-top: 14px;
+        gap: 10px;
+    }
+
+    .ct_client_avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .ct_client_author_name {
+        font-size: 13.5px;
+    }
+
+    .ct_client_author_role {
+        font-size: 11.5px;
+    }
+
+    .ct_client_video_card {
+        aspect-ratio: 3 / 4;
+        min-height: auto;
+    }
+
+    .ct_client_play_btn {
+        width: 48px;
+        height: 48px;
+    }
+
+    .ct_client_play_btn svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .ct_client_video_author {
+        bottom: 16px;
+        left: 16px;
+        right: 16px;
+        gap: 10px;
+    }
+
+    .ct_client_video_avatar {
+        width: 38px;
+        height: 38px;
+    }
+
+    .ct_client_video_name {
+        font-size: 13.5px;
+    }
+
+    .ct_client_video_role {
+        font-size: 11.5px;
+    }
+}
+
+/* ==========================================================================
+   3. Tablets & Small Desktops (max-width: 991px)
+   ========================================================================== */
+@media (max-width: 991px) {
+
+    /* Hero Section */
+    .ct_hero_section {
+        padding: 50px 0 60px 0;
+        min-height: auto;
+        align-items: center;
+    }
+
+    .ct_partner_img {
+        aspect-ratio: 4 / 3;
+    }
+
+    .ct_hero_content {
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    .ct_hero_title {
+        font-size: 38px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ct_hero_desc {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+    }
+
+    .ct_hero_btn_wrap {
+        justify-content: center;
+    }
+
+    .ct_hero_services_bar {
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .ct_hero_img_container {
+        margin-top: 40px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ct_stat_num {
+        font-size: 32px;
+    }
+
+    .ct_stat_label {
+        font-size: 12.5px;
+    }
+
+    .ct_badge_top_right {
+        top: 15px;
+        right: -10px;
+    }
+
+    .ct_badge_bottom_left {
+        bottom: 25px;
+        left: -15px;
+    }
+
+    .ct_badge_bottom_right {
+        bottom: 35px;
+        right: -15px;
+    }
+
+    /* Technology Built Section */
+    .ct_tech_card {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.28);
+        padding: 24px 28px 36px 28px;
+        min-height: auto;
+    }
+
+    .ct_tech_box .col-lg-4:last-child .ct_tech_card {
+        border-bottom: none;
+    }
+
+    .ct_tech_card_img_wrap {
+        height: 140px;
+        margin-bottom: 20px;
+    }
+
+    .ct_img_experienced {
+        height: 130px;
+    }
+
+    .ct_img_end_to_end {
+        height: 135px;
+    }
+
+    .ct_img_business {
+        height: 125px;
+    }
+
+    /* Turn Business Challenges Section */
+    .ct_turn_business_section {
+        padding: 55px 0 0 0;
+    }
+
+    .ct_turn_business_content_col {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
+
+    .ct_turn_business_content {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ct_turn_business_title {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ct_turn_business_btn_wrap {
+        justify-content: center;
+    }
+
+    .ct_turn_business_img_container {
+        justify-content: center;
+    }
+
+    .ct_turn_business_img_wrap {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .ct_turn_business_img {
+        max-width: 100%;
+        margin: 0 auto;
+        max-height: unset;
+        aspect-ratio: 4 / 4;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    /* We Solve Problems Section */
+
+
+    .ct_stack_card_num {
+        font-size: 38px;
+    }
+
+    .ct_stack_card_title {
+        font-size: 20px;
+    }
+
+    /* Horizontal Services Section */
+    .ct_horiz_outer_wrap {
+        padding: 70px 0 60px 0;
+    }
+
+    .ct_horiz_card {
+        flex: 0 0 360px;
+        width: 360px;
+        padding: 0 26px;
+    }
+
+    .ct_horiz_card_title {
+        font-size: 24px;
+    }
+
+    .ct_horiz_card_subtitle {
+        font-size: 16px;
+    }
+
+    .ct_horiz_card_desc {
+        font-size: 14px;
+    }
+
+    .ct_horiz_card_link {
+        font-size: 13px;
+        margin-top: 18px;
+    }
+
+    .ct_horiz_card_img_wrap {
+        height: 185px;
+    }
+
+    .ct_cta_card {
+        padding: 44px 34px;
+    }
+
+    /* Why Businesses Choose Us Section */
+
+
+    .ct_why_choose_img_wrap {
+        max-width: 560px;
+        margin: 0 auto 36px auto;
+    }
+
+    .ct_why_choose_title {
+        font-size: 32px;
+    }
+
+    .ct_why_choose_desc {
+        max-width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .ct_why_item_with_burst .ct_why_burst_bg {
+        left: 140px;
+    }
+
+    /* A Clear Process Section */
+    .ct_process_section {
+        padding: 70px 0;
+    }
+
+    .ct_process_heading {
+        margin-bottom: 40px;
+    }
+
+    .ct_process_timeline_wrap {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+
+    /* Technology That Fits The Job Section */
+    .ct_fits_section {
+        padding: 70px 0;
+    }
+
+    .ct_fits_left {
+        text-align: center;
+        margin-bottom: 48px;
+    }
+
+    .ct_fits_title {
+        font-size: 36px;
+    }
+
+
+    .ct_fits_stack_wrap {
+        margin: 0 auto 32px auto;
+        max-width: 420px;
+    }
+
+    .ct_fits_btn_req {
+        padding: 14px 28px;
+    }
+
+    /* Industry Section */
+    .ct_industry_section {
+        padding: 70px 0 80px 0;
+    }
+
+
+
+    .ct_industry_layout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 24px;
+    }
+
+    .ct_industry_tabs_wrap {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .ct_industry_tabs_list {
+        flex-direction: row;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+        gap: 10px;
+        scrollbar-width: none;
+    }
+
+    .ct_industry_tabs_list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .ct_industry_tab_item {
+        padding: 8px 18px;
+        border-radius: 50px;
+        background: rgba(255, 255, 255, 0.12);
+        white-space: nowrap;
+        flex-shrink: 0;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .ct_industry_tab_item .ct_tab_bar {
+        display: none;
+    }
+
+    .ct_industry_tab_item .ct_tab_text {
+        font-size: 14.5px;
+        color: #ffffff;
+    }
+
+    .ct_industry_tab_item.active {
+        background: #ffffff;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .ct_industry_tab_item.active .ct_tab_text {
+        color: var(--brand-blue);
+        font-family: 'Satoshi_Bold', sans-serif;
+    }
+
+    .ct_industry_slider_wrap {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .ct_industry_card {
+        min-height: 430px;
+        padding: 26px 26px;
+    }
+
+    /* Solutions Showcase Section */
+    .ct_solutions_section {
+        padding: 70px 0 80px 0;
+    }
+
+    .ct_solutions_head {
+        margin-bottom: 35px;
+    }
+
+    .ct_project_title {
+        font-size: 24px;
+    }
+
+    .ct_project_info {
+        padding: 20px 20px 16px 20px;
+    }
+
+    .ct_project_desc {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    /* Technology Partner Section */
+    .ct_partner_section {
+        padding: 70px 0 80px 0;
+    }
+
+    .ct_partner_content_wrap {
+        padding-right: 0;
+    }
+
+    .ct_partner_title {
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+
+    .ct_partner_text {
+        font-size: 15px;
+        margin-bottom: 14px;
+    }
+
+    .ct_partner_btn_wrap {
+        margin-top: 28px;
+    }
+
+    .ct_partner_img_wrap {
+        margin-top: 20px;
+    }
+
+
+
+    /* What Our Clients Say Section */
+    .ct_clients_say_section {
+        padding: 70px 0 80px 0;
+    }
+
+    .ct_clients_say_head {
+        margin-bottom: 45px;
+    }
+
+    .ct_clients_say_title {
+        font-size: 34px;
+    }
+
+    .ct_clients_say_subtitle {
+        font-size: 15px;
+    }
+
+    .ct_clients_stats_wrap {
+        margin-bottom: 45px;
+    }
+
+    .ct_clients_stat_num {
+        font-size: 38px;
+        margin-bottom: 12px;
+    }
+
+    .ct_clients_stat_label {
+        font-size: 14px;
+    }
+
+    .ct_clients_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ct_clients_col {
+        gap: 20px;
+        min-width: 0;
+    }
+
+    .ct_clients_col:nth-child(2) {
+        margin-top: 0;
+    }
+
+    .ct_clients_col:nth-child(3) {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .ct_clients_col:nth-child(3) .ct_client_card:last-child {
+        grid-column: 1 / -1;
+        max-width: 500px;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .ct_client_quote_card {
+        min-height: auto;
+        padding: 26px 22px 22px 22px;
+    }
+
+    .ct_client_card_top {
+        margin-bottom: 30px;
+    }
+
+    .ct_client_quote_icon {
+        width: 40px;
+    }
+
+    .ct_client_quote_text {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .ct_client_video_card {
+        aspect-ratio: 3 / 4;
+        min-height: auto;
+    }
+
+    /* Practical Ideas / Blog Section */
+    .ct_blog_section {
+        padding: 70px 0 80px 0;
+    }
+
+    .ct_blog_title {
+        font-size: 34px;
+        margin-bottom: 14px;
+    }
+
+    .ct_blog_subtitle {
+        font-size: 15px;
+    }
+
+    .ct_blog_head {
+        margin-bottom: 36px;
+    }
+
+    .ct_blog_card_title {
+        font-size: 18.5px;
+    }
+
+    .ct_blog_btn_wrap {
+        margin-top: 36px;
+    }
+
+    /* Bring AI Section */
+    .ct_ai_section {
+        padding: 60px 0 70px 0;
+    }
+
+    .ct_ai_img_wrap {
+        border-radius: 24px;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .ct_ai_img {
+        border-radius: 24px;
+    }
+
+    .ct_ai_content_wrap {
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-top: 36px;
+        max-width: 100%;
+    }
+
+    .ct_ai_title {
+        font-size: 32px;
+    }
+
+    .ct_ai_desc {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    /* FAQ Section */
+    .ct_faq_section {
+        padding: 70px 0 80px 0;
+    }
+
+    .ct_contact_card {
+        padding: 34px 26px;
+        margin-top: 15px;
+    }
+
+    .ct_contact_card_title {
+        font-size: 24px;
+    }
+}
+
+/* ==========================================================================
+   4. Mobile Devices & Phablets (max-width: 767px)
+   ========================================================================== */
+@media (max-width: 767px) {
+
+    /* Hero Section */
+    .ct_hero_section {
+        padding: 40px 0 50px 0;
+        min-height: auto;
+    }
+
+    .ct_fs_34 {
+        font-size: 26px;
+    }
+
+    .ct_stack_card_desc,
+    .ct_why_choose_desc,
+    .ct_fits_desc,
+    .ct_blog_subtitle,
+    .ct_ai_desc,
+    .ct_solutions_desc,
+    .ct_ai_desc {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .ct_hero_title {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .ct_hero_desc {
+        font-size: 14.5px;
+        line-height: 1.5;
+    }
+
+    .ct_btn_discuss {
+        padding: 12px 28px;
+        font-size: 13px;
+    }
+
+    .ct_hero_services_bar {
+        gap: 8px;
+        justify-content: center;
+        margin-top: 24px;
+    }
+
+    .ct_hero_service_link {
+        font-size: 11.5px;
+        letter-spacing: 0.3px;
+    }
+
+    .ct_hero_service_divider {
+        margin: 0 6px;
+        height: 14px;
+    }
+
+    .ct_hero_img_container {
+        max-width: 340px;
+        margin-top: 35px;
+    }
+
+    .ct_stat_badge {
+        border-radius: 14px !important;
+        padding: 10px 14px;
+        min-width: 120px;
+    }
+
+    .ct_stat_num {
+        font-size: 24px;
+    }
+
+    .ct_stat_label {
+        font-size: 11px;
+    }
+
+    .ct_badge_top_right {
+        top: 10px;
+        right: -15px;
+    }
+
+    .ct_badge_bottom_left {
+        bottom: 15px;
+        left: -10px;
+    }
+
+    .ct_badge_bottom_right {
+        bottom: 25px;
+        right: -10px;
+    }
+
+    .ct_turn_business_desc {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .ct_turn_business_btn_wrap {
+        margin-top: 50px;
+    }
+
+    /* Technology Built Section */
+    .ct_fs_52 {
+        font-size: 32px !important;
+    }
+
+    .ct_tech_card_title {
+        font-size: 22px;
+    }
+
+    .ct_tech_card_desc {
+        font-size: 14.5px;
+    }
+
+    .ct_mb_64 {
+        margin-bottom: 40px;
+    }
+
+    /* Turn Business Challenges Section */
+    .ct_turn_business_section {
+        padding: 40px 0;
+    }
+
+    .ct_stack_card_desc {
+        margin-left: 0px;
+    }
+
+    .ct_btn_explore {
+        padding: 12px 26px;
+        font-size: 12.5px;
+    }
+
+    .ct_turn_business_img_wrap {
+        max-width: 100%;
+        border-radius: 0 !important;
+    }
+
+    .ct_turn_business_img {
+        border-radius: 0 !important;
+    }
+
+    /* We Solve Problems Section */
+
+
+    .ct_stack_card {
+        top: 85px;
+    }
+
+    .ct_stack_card_num {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .ct_stack_card_title {
+        margin-bottom: 10px;
+    }
+
+    /* Horizontal Services Section */
+
+
+    .ct_horiz_title {
+        font-size: clamp(20px, 5.2vw, 28px);
+        line-height: 1.2;
+    }
+
+    .ct_horiz_track_wrap {
+        width: 100%;
+        overflow: visible;
+    }
+
+    .ct_horiz_track {
+        display: flex;
+        flex-wrap: nowrap;
+        will-change: transform;
+    }
+
+    .ct_horiz_card {
+        flex: 0 0 clamp(280px, 80vw, 360px);
+        width: clamp(280px, 80vw, 360px);
+        padding: 0 18px;
+        border-left: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+    }
+
+    .ct_horiz_card:first-child {
+        padding-left: 0;
+        border-left: none;
+    }
+
+    .ct_horiz_card_body {
+        margin-bottom: 14px;
+    }
+
+    .ct_horiz_card_icon {
+        height: 32px;
+        margin-bottom: 30px;
+    }
+
+    .ct_horiz_card_icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+
+
+    .ct_horiz_card_subtitle {
+        font-size: 14px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .ct_horiz_card_desc {
+        font-size: 14px;
+        line-height: 1.45;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .ct_horiz_card_link {
+        font-size: 12.5px;
+        margin-top: 14px;
+    }
+
+    .ct_horiz_card_img_wrap {
+        height: clamp(120px, 18vh, 160px);
+    }
+
+    .ct_cta_section {
+        padding: 60px 0;
+    }
+
+    .ct_cta_card {
+        padding: 34px 22px;
+        border-radius: 16px;
+    }
+
+    /* Why Businesses Choose Us Section */
+
+
+    .ct_why_choose_img_wrap {
+        border-radius: 22px;
+        margin-bottom: 30px;
+    }
+
+    .ct_why_choose_img {
+        border-radius: 22px;
+    }
+
+    .ct_why_choose_title {
+        font-size: 26px;
+        margin-bottom: 16px;
+    }
+
+
+
+    .ct_why_features_list {
+        gap: 24px;
+    }
+
+    .ct_why_feature_badge {
+        width: 44px;
+        min-width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .ct_why_item_with_burst .ct_why_burst_bg {
+        left: 110px;
+        top: -32px;
+        width: 60px;
+        height: 60px;
+    }
+
+
+
+
+    /* A Clear Process Section */
+    .ct_process_section {
+        padding: 55px 0;
+    }
+
+    .ct_process_text_box {
+        margin-top: 24px;
+        text-align: center;
+    }
+
+    .ct_process_step_desc {
+        margin: 0 auto;
+    }
+
+    .ct_process_backdrop {
+        top: -14px;
+        left: -14px;
+        width: 90%;
+        height: 90%;
+        border-radius: 14px;
+    }
+
+    .ct_process_img_box {
+        border-radius: 14px;
+    }
+
+    .ct_process_badge_icon {
+        width: 50px;
+        height: 56px;
+        top: -14px;
+        right: 0;
+    }
+
+    .ct_process_badge_icon svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    .ct_process_step_title {
+        font-size: 24px;
+    }
+
+    .ct_process_node_active {
+        width: 38px;
+        height: 38px;
+        font-size: 14px;
+    }
+
+    /* Technology That Fits The Job Section */
+    .ct_fits_section {
+        padding: 55px 0;
+    }
+
+    .ct_fits_title {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+
+    .ct_fits_stack_wrap {
+        max-width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+    }
+
+    .ct_fits_stack_svg {
+        min-width: 380px;
+    }
+
+    .ct_fits_btn_req {
+        font-size: 12.5px;
+        padding: 13px 22px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .ct_fits_card {
+        padding: 22px 20px;
+    }
+
+    .ct_fits_card_bar {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    .ct_fits_card_title {
+        font-size: 20px;
+    }
+
+    .ct_fits_grid {
+        row-gap: 18px;
+        column-gap: 14px;
+    }
+
+    /* Industry Section */
+    .ct_industry_slider_wrap {
+        gap: 10px;
+    }
+
+    .ct_industry_nav_btn {
+        padding: 4px;
+    }
+
+    .ct_industry_nav_btn svg {
+        width: 16px;
+        height: 28px;
+    }
+
+    .ct_industry_card {
+        min-height: 400px;
+        padding: 22px 20px;
+    }
+
+    .ct_industry_feature_list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 14px;
+    }
+
+    /* What Our Clients Say Section */
+    .ct_clients_say_section {
+        padding: 60px 0 70px 0;
+    }
+
+    .ct_clients_say_head {
+        margin-bottom: 36px;
+    }
+
+    .ct_clients_say_title {
+        font-size: 30px;
+    }
+
+    .ct_clients_say_subtitle {
+        font-size: 14.5px;
+    }
+
+    .ct_clients_stats_wrap {
+        margin-bottom: 40px;
+    }
+
+    .ct_clients_stat_item {
+        text-align: center;
+    }
+
+    .ct_clients_stat_num {
+        font-size: 34px;
+        margin-bottom: 8px;
+        justify-content: center;
+    }
+
+    .ct_clients_stat_label {
+        font-size: 13.5px;
+    }
+
+    .ct_clients_grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .ct_clients_col {
+        gap: 18px;
+    }
+
+    .ct_clients_col:nth-child(3) {
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .ct_clients_col:nth-child(3) .ct_client_card:last-child {
+        grid-column: auto;
+        max-width: 100%;
+    }
+
+    .ct_client_quote_card {
+        padding: 22px 20px 20px 20px;
+        min-height: auto;
+    }
+
+    .ct_client_card_top {
+        margin-bottom: 22px;
+    }
+
+    .ct_client_quote_icon {
+        width: 36px;
+    }
+
+    .ct_client_quote_text {
+        font-size: 14.5px;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+
+    .ct_client_video_card {
+        aspect-ratio: 4 / 3;
+        min-height: auto;
+    }
+
+    .ct_client_play_btn {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+/* ==========================================================================
+   5. Small Mobile Screens (max-width: 575px)
+   ========================================================================== */
+@media (max-width: 575px) {
+    .ct_fs_52 br {
+        display: none;
+    }
+
+    /* Hero Section */
+    .ct_hero_title {
+        font-size: 26px;
+    }
+
+    .ct_fs_34 {
+        font-size: 20px;
+    }
+
+    .ct_hero_desc {
+        font-size: 14px;
+    }
+
+    .ct_hero_img_container {
+        max-width: 310px;
+        margin-top: 30px;
+    }
+
+    .ct_stat_num {
+        font-size: 20px;
+    }
+
+    .ct_stat_label {
+        font-size: 11px;
+    }
+
+    .ct_badge_top_right {
+        top: -3px;
+        right: -4px;
+        width: 96px;
+    }
+
+    .ct_badge_bottom_left {
+        bottom: 10px;
+        left: -8px;
+    }
+
+    .ct_badge_bottom_right {
+        bottom: 40px;
+        right: -8px;
+    }
+
+    .ct_brand_section {
+        padding: 24px 0;
+    }
+
+    .ct_brand_logo {
+        height: 28px;
+        max-width: 120px;
+    }
+
+    /* Technology Built Section */
+    .ct_fs_52 {
+        font-size: 26px !important;
+    }
+
+    .ct_tech_box {
+        border-radius: 20px;
+    }
+
+    .ct_tech_card {
+        padding: 20px 20px 30px 20px;
+    }
+
+    /* Turn Business Challenges Section */
+    .ct_turn_business_img_wrap {
+        border-radius: 0 !important;
+    }
+
+    .ct_turn_business_img {
+        border-radius: 0 !important;
+    }
+
+    /* We Solve Problems Section */
+    .ct_stack_card {
+        top: 80px;
+    }
+
+    .ct_stack_card_num {
+        font-size: 28px;
+    }
+
+    .ct_stack_card_title {
+        font-size: 20px;
+    }
+
+    /* Horizontal Services Section */
+    .ct_horiz_card {
+        flex: 0 0 clamp(260px, 84vw, 320px);
+        width: clamp(260px, 84vw, 320px);
+        padding: 0 14px;
+    }
+
+    .ct_horiz_card_img_wrap {
+        height: clamp(110px, 16vh, 140px);
+    }
+
+    /* Why Businesses Choose Us Section */
+
+
+    .ct_why_choose_img_wrap {
+        border-radius: 18px;
+    }
+
+    .ct_why_choose_img {
+        border-radius: 18px;
+    }
+
+    .ct_why_choose_title {
+        font-size: 22px;
+        letter-spacing: -0.3px;
+    }
+
+    .ct_why_feature_item {
+        gap: 12px;
+    }
+
+    .ct_why_feature_badge {
+        width: 38px;
+        min-width: 38px;
+        height: 38px;
+        font-size: 16px;
+    }
+
+    .ct_why_item_with_burst .ct_why_burst_bg {
+        left: 90px;
+        top: -28px;
+        width: 54px;
+        height: 54px;
+    }
+
+
+
+
+    /* A Clear Process Section */
+    .ct_process_section {
+        padding: 42px 0;
+    }
+
+    .ct_process_backdrop {
+        top: -10px;
+        left: -10px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .ct_process_badge_icon {
+        top: -10px;
+        right: 0;
+        width: 44px;
+        height: 50px;
+    }
+
+    /* Technology That Fits The Job Section */
+    .ct_fits_section {
+        padding: 42px 0;
+    }
+
+    .ct_fits_title {
+        font-size: 24px;
+    }
+
+    .ct_fits_card {
+        padding: 20px 16px;
+    }
+
+    .ct_fits_card_bar {
+        width: calc(100% + 32px);
+        margin-left: -16px;
+        margin-right: -16px;
+        margin-bottom: 18px;
+    }
+
+    .ct_fits_name {
+        font-size: 13.5px;
+    }
+
+    .ct_fits_icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Industry Section */
+    .ct_industry_section {
+        padding: 50px 0 65px 0;
+    }
+
+    .ct_industry_slider_wrap {
+        gap: 6px;
+    }
+
+    .ct_industry_nav_btn svg {
+        width: 14px;
+        height: 24px;
+    }
+
+    .ct_industry_card {
+        min-height: 390px;
+        padding: 20px 16px;
+        border-radius: 16px;
+    }
+
+    .ct_industry_explore_btn {
+        font-size: 12px;
+        padding: 7px 14px;
+    }
+
+    .ct_industry_card_title {
+        font-size: 21px;
+    }
+
+    .ct_industry_card_desc {
+        font-size: 13px;
+        margin-bottom: 16px;
+    }
+
+    .ct_industry_feature_list {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    /* Solutions Showcase Section */
+    .ct_solutions_section {
+        padding: 50px 0 65px 0;
+    }
+
+    .ct_solutions_desc {
+        font-size: 14px;
+    }
+
+    .ct_project_info {
+        padding: 16px 16px 14px 16px;
+    }
+
+    .ct_project_title {
+        font-size: 20px;
+    }
+
+    .ct_project_badge {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    .ct_project_desc {
+        font-size: 13px;
+        margin-top: 8px;
+    }
+
+    /* Technology Partner Section */
+    .ct_partner_section {
+        padding: 50px 0 65px 0;
+    }
+
+    .ct_partner_title {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .ct_partner_text {
+        font-size: 14px;
+        line-height: 1.55;
+        margin-bottom: 12px;
+    }
+
+    .ct_partner_btn_wrap {
+        margin-top: 24px;
+    }
+
+    .ct_partner_btn_wrap .ct_btn_discuss {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+        font-size: 12.5px;
+    }
+
+    /* What Our Clients Say Section */
+    .ct_clients_say_section {
+        padding: 50px 0 60px 0;
+    }
+
+    .ct_clients_say_head {
+        margin-bottom: 30px;
+    }
+
+    .ct_clients_say_title {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
+
+    .ct_clients_say_subtitle {
+        font-size: 13.5px;
+        line-height: 1.45;
+    }
+
+    .ct_clients_stats_wrap {
+        margin-bottom: 35px;
+    }
+
+    .ct_clients_stat_num {
+        font-size: 30px;
+        margin-bottom: 6px;
+    }
+
+    .ct_clients_stat_label {
+        font-size: 13px;
+    }
+
+    .ct_clients_grid {
+        gap: 16px;
+    }
+
+    .ct_clients_col {
+        gap: 16px;
+    }
+
+    .ct_client_quote_card {
+        padding: 20px 16px 18px 16px;
+        min-height: auto;
+        border-radius: 6px;
+    }
+
+    .ct_client_card_top {
+        margin-bottom: 18px;
+    }
+
+    .ct_client_quote_icon {
+        width: 32px;
+    }
+
+    .ct_client_tag {
+        font-size: 10px;
+        padding: 2px 7px;
+    }
+
+    .ct_client_quote_text {
+        font-size: 13.5px;
+        line-height: 1.48;
+        margin-bottom: 14px;
+    }
+
+    .ct_client_author {
+        padding-top: 12px;
+        gap: 8px;
+    }
+
+    .ct_client_avatar {
+        width: 34px;
+        height: 34px;
+    }
+
+    .ct_client_author_name {
+        font-size: 13px;
+    }
+
+    .ct_client_author_role {
+        font-size: 10.5px;
+    }
+
+    .ct_client_video_card {
+        aspect-ratio: 16 / 11;
+        min-height: auto;
+        border-radius: 6px;
+    }
+
+    .ct_client_play_btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .ct_client_play_btn svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .ct_client_video_author {
+        bottom: 14px;
+        left: 14px;
+        right: 14px;
+        gap: 8px;
+    }
+
+    .ct_client_video_avatar {
+        width: 32px;
+        height: 32px;
+    }
+
+    .ct_client_video_name {
+        font-size: 13px;
+    }
+
+    .ct_client_video_role {
+        font-size: 10.5px;
+    }
+
+    /* Practical Ideas / Blog Section */
+    .ct_blog_section {
+        padding: 50px 0 65px 0;
+    }
+
+    .ct_blog_title {
+        font-size: 27px;
+        line-height: 1.2;
+    }
+
+    .ct_blog_subtitle {
+        font-size: 14px;
+    }
+
+    .ct_blog_content {
+        padding: 20px 18px 22px 18px;
+    }
+
+    .ct_blog_card_title {
+        font-size: 17px;
+    }
+
+    .ct_blog_btn_wrap {
+        margin-top: 28px;
+    }
+
+    .ct_blog_btn_wrap .ct_btn_discuss {
+        width: 100%;
+        text-align: center;
+        padding: 13px 20px;
+        font-size: 12.5px;
+    }
+
+    /* Bring AI Section */
+    .ct_ai_section {
+        padding: 45px 0 55px 0;
+    }
+
+    .ct_ai_img_wrap {
+        border-radius: 18px;
+        margin: 0 12px;
+    }
+
+    .ct_ai_img {
+        border-radius: 18px;
+    }
+
+    .ct_ai_content_wrap {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 26px;
+    }
+
+    .ct_ai_title {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    .ct_ai_features {
+        padding-left: 0;
+    }
+
+    .ct_ai_block_title {
+        font-size: 18px;
+    }
+
+    .ct_ai_feature_item {
+        font-size: 14px;
+    }
+
+    /* FAQ Section */
+    .ct_faq_section {
+        padding: 50px 0 60px 0;
+    }
+
+    .ct_faq_title {
+        font-size: 28px;
+    }
+
+    .ct_faq_question {
+        font-size: 14.5px;
+        padding: 15px 0;
+    }
+
+    .ct_contact_card {
+        padding: 28px 18px;
+    }
+
+    .ct_contact_card_title {
+        font-size: 21px;
+    }
+
+    .ct_form_btn_wrap .ct_btn_discuss {
+        width: 100%;
+        text-align: center;
+    }
+}

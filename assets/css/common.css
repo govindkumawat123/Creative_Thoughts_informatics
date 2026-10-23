@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+:root {
+    --primary-color: #111111;
+    --secondary-color: #5C5C5C;
+    --brand-green: #00B355;
+    --brand-blue: #1E7EB8;
+    --brand-coral: #FF5F4C;
+}
+
+
+
+/* All font Size  */
+.ct_fs_72 {
+    font-size: 72px;
+}
+
+.ct_fs_52 {
+    font-size: 52px;
+}
+
+.ct_fs_34 {
+    font-size: 34px;
+}
+
+.ct_fs_38 {
+    font-size: 38px;
+}
+
+.ct_fs_28 {
+    font-size: 28px;
+}
+
+.ct_fs_24 {
+    font-size: 24px;
+}
+
+.ct_fs_20 {
+    font-size: 20px;
+}
+
+.ct_fs_14 {
+    font-size: 14px;
+}
+
+.ct_fs_12 {
+    font-size: 12px;
+}
+
+/* Colors */
+.ct_text_blue {
+    color: var(--brand-blue) !important;
+}
+
+.ct_text_primary {
+    color: var(--primary-color) !important;
+}
+
+.ct_text_secondary {
+    color: var(--secondary-color) !important;
+}
+
+.ct_bg_blue {
+    background-color: var(--brand-blue) !important;
+}
+
+.ct_head_text_blue {
+    color: #1E7EB8;
+}
+
+html,
+body {
+    overflow-x: clip;
+}
+
+body {
+    font-family: 'Satoshi_regular';
+    color: var(--primary-color);
+    background-color: #F7FCFF;
+}
+
+@font-face {
+    font-family: 'Satoshi_regular';
+    src: url(../fonts/Satoshi-Regular.otf);
+}
+
+@font-face {
+    font-family: 'Satoshi_Medium';
+    src: url(../fonts/Satoshi-Medium.otf);
+}
+
+@font-face {
+    font-family: 'Satoshi_Bold';
+    src: url(../fonts/Satoshi-Bold.otf);
+}
+
+.ct_ff_satoshi_regular {
+    font-family: 'Satoshi_regular';
+}
+
+.ct_ff_satoshi_medium {
+    font-family: 'Satoshi_Medium';
+}
+
+.ct_ff_satoshi_bold {
+    font-family: 'Satoshi_Bold';
+}
+
+
+/* All Sapcing css  */
+.ct_mb_64 {
+    margin-bottom: 64px;
+}
+
+.ct_py_120 {
+    padding-block: 120px;
+}
+
+.ct_mb_36 {
+    margin-bottom: 36px;
+}
