@@ -5,7 +5,7 @@
 .ct_footer_section {
     background-color: transparent;
     color: #ffffff;
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 30px;
     position: relative;
 }
@@ -31,7 +31,7 @@
 }
 
 .ct_footer_logo {
-    height: 44px;
+    height: 80px;
     width: auto;
     display: block;
 }
@@ -254,9 +254,7 @@
    ========================================================================== */
 
 @media (max-width: 991px) {
-    .ct_footer_section {
-        padding-top: 35px;
-    }
+
 
     .ct_footer_top_line {
         margin-top: 30px;
@@ -291,10 +289,7 @@
 }
 
 @media (max-width: 575px) {
-    .ct_footer_section {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+
 
     .ct_footer_top_line {
         margin-top: 25px;

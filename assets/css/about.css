@@ -1,0 +1,1365 @@
+/* ==========================================================================
+   Creative Thoughts Informatics - About Us Stylesheet (about.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Section
+   -------------------------------------------------------------------------- */
+.ct_about_hero_section {
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 268.26%);
+
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 90px;
+    overflow: hidden;
+}
+
+.ct_about_hero_title {
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.ct_about_hero_desc {
+    line-height: 1.55;
+    max-width: 540px;
+    color: rgba(255, 255, 255, 0.92) !important;
+}
+
+.ct_about_banner_shape {
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    max-height: 520px;
+    border-radius: 35px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    transform: scaleX(-1);
+
+
+
+}
+
+.ct_about_hero_btn_wrap {
+    margin-top: 64px;
+}
+
+/* White Pill Button */
+.ct_btn_white_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    background-color: #ffffff;
+    color: var(--brand-blue) !important;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ct_btn_white_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+/* Left overlay hover animation */
+.ct_btn_white_pill::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--brand-blue);
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_btn_white_pill:hover::before {
+    width: 100%;
+}
+
+.ct_btn_white_pill:hover {
+    color: #ffffff !important;
+    border-color: var(--brand-blue);
+    box-shadow: 0 10px 24px rgba(20, 128, 198, 0.35);
+}
+
+.ct_btn_white_pill:hover span {
+    color: #ffffff !important;
+}
+
+.ct_btn_outline_white {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 13px 32px;
+    background-color: transparent;
+    color: #ffffff !important;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Satoshi_Bold';
+    font-size: 14px;
+    transition: all 0.35s ease;
+}
+
+
+/* --------------------------------------------------------------------------
+   2. Solve Problems Section (Team Image & Stats)
+   -------------------------------------------------------------------------- */
+.ct_about_solve_section {
+    position: relative;
+}
+
+.ct_about_team_img_wrap {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.ct_about_team_img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.ct_about_stat_box {
+    padding: 20px 10px;
+    transition: transform 0.3s ease;
+}
+
+.ct_about_stat_box:hover {
+    transform: translateY(-4px);
+}
+
+.ct_about_stat_num {
+    color: var(--primary-color);
+    line-height: 1.1;
+    margin-bottom: 8px;
+}
+
+.ct_about_stat_num span {
+    color: var(--brand-blue);
+}
+
+/* --------------------------------------------------------------------------
+   3. Technology Built Around Your Business Section
+   -------------------------------------------------------------------------- */
+.ct_about_tech_section {
+    position: relative;
+}
+
+.ct_about_sec_title {
+    letter-spacing: -0.5px;
+}
+
+.ct_about_feature_img_wrap {
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.ct_about_feature_img_wrap img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+/* --------------------------------------------------------------------------
+   4. Growth Through Technology and Trust (Timeline)
+   -------------------------------------------------------------------------- */
+.ct_about_growth_section {
+    background: linear-gradient(179.48deg, #1E7EB8 0.38%, #FFFFFF 325.41%);
+
+    position: relative;
+    overflow: hidden;
+}
+
+.ct_about_growth_head {
+    /* spacing handled by utility classes */
+}
+
+.ct_growth_timeline {
+    width: 100%;
+    border-top: 2px solid rgba(255, 255, 255, 1);
+}
+
+.ct_growth_row {
+    width: 100%;
+    padding: 32px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 1);
+    transition: background 0.3s ease;
+}
+
+/* Growth Timeline Card Design (Custom Flex - No Bootstrap) */
+.ct_growth_item {
+    display: flex;
+    align-items: start;
+    gap: 32px;
+    width: 100%;
+}
+
+.ct_growth_img_wrap {
+    width: 250px;
+    height: 175px;
+    border-radius: 22px;
+    overflow: hidden;
+    background-color: #ffffff;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.ct_growth_title_wrap {
+    flex-shrink: 0;
+}
+
+.ct_growth_desc_wrap {
+    margin-left: auto;
+    max-width: 447px;
+}
+
+.ct_growth_img_wrap::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transform: skewX(-25deg);
+    transition: left 0.75s ease;
+    pointer-events: none;
+}
+
+.ct_growth_img_wrap:hover,
+.ct_growth_row:hover .ct_growth_img_wrap {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.18);
+}
+
+.ct_growth_img_wrap:hover::after,
+.ct_growth_row:hover .ct_growth_img_wrap::after {
+    left: 160%;
+}
+
+.ct_growth_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.ct_growth_img_wrap:hover .ct_growth_img,
+.ct_growth_row:hover .ct_growth_img {
+    transform: scale(1.05);
+}
+
+.ct_growth_year_title {
+    line-height: 1.25;
+    letter-spacing: -0.3px;
+}
+
+.ct_growth_desc {
+    line-height: 1.55;
+    color: rgba(255, 255, 255, 1) !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Capabilities Grid (01 - 06)
+   -------------------------------------------------------------------------- */
+.ct_about_capabilities_section {
+    position: relative;
+}
+
+.ct_cap_card {
+    background-color: #E0E0E080;
+    border: none;
+    border-radius: 20px;
+    padding: 34px 28px 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, background-color 0.35s ease;
+}
+
+.ct_cap_card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(30, 126, 184, 0.25);
+    background-color: var(--brand-blue);
+}
+
+.ct_cap_card:hover .ct_cap_num,
+.ct_cap_card:hover h3,
+.ct_cap_card:hover .ct_cap_desc {
+    color: #ffffff !important;
+}
+
+.ct_cap_num {
+    font-size: 72px;
+    line-height: 1;
+    margin-bottom: 50px;
+    letter-spacing: -1px;
+    transition: color 0.35s ease;
+}
+
+.ct_cap_title {
+    font-size: 28px;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    letter-spacing: -0.3px;
+    transition: color 0.35s ease;
+}
+
+.ct_cap_desc {
+    margin-bottom: 0;
+    line-height: 20px;
+    font-size: 16px;
+    transition: color 0.35s ease;
+}
+
+/* --------------------------------------------------------------------------
+   6. Making AI Useful Section
+   -------------------------------------------------------------------------- */
+.ct_about_ai_section {
+    position: relative;
+}
+
+.ct_about_ai_desc {
+    line-height: 1.6;
+    max-width: 550px;
+}
+
+.ct_about_ai_subtitle {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.ct_about_ai_list {
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 42px;
+}
+
+.ct_about_ai_list li {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.ct_ai_bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--brand-blue);
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.ct_about_ai_img_wrap {
+    border-radius: 28px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ct_about_ai_img_wrap img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    aspect-ratio: 9 / 14;
+}
+
+/* --------------------------------------------------------------------------
+   7. Start With Problem Section (01-05 Grid + Image)
+   -------------------------------------------------------------------------- */
+.ct_about_problem_section {
+    position: relative;
+}
+
+.ct_problem_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr;
+    gap: 28px;
+    align-items: stretch;
+}
+
+.ct_problem_grid_card_01 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ct_problem_grid_card_02 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.ct_problem_grid_card_03 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.ct_problem_grid_img {
+    grid-column: 1;
+    grid-row: 2 / span 2;
+}
+
+.ct_problem_grid_card_04 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.ct_problem_grid_card_05 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.ct_problem_grid_summary {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}
+
+.ct_problem_card {
+    background-color: #EDF1F5;
+    border: none;
+    border-radius: 20px;
+    padding: 38px 38px 36px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ct_problem_card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
+}
+
+.ct_problem_card_active {
+    background-color: var(--brand-blue);
+    color: #ffffff !important;
+}
+
+.ct_problem_card_head {
+    display: flex;
+    align-items: end;
+    gap: 14px;
+    margin-bottom: 24px;
+}
+
+.ct_problem_num {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1.5px;
+    color: var(--primary-color);
+}
+
+.ct_problem_card_active .ct_problem_num {
+    color: #ffffff !important;
+}
+
+.ct_problem_title {
+    font-size: 16px;
+    line-height: 1.35;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.ct_problem_card_active .ct_problem_title {
+    color: #ffffff !important;
+}
+
+.ct_problem_desc {
+    font-size: 20px;
+    line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 0;
+}
+
+.ct_problem_card_active .ct_problem_desc {
+    color: #ffffff !important;
+}
+
+.ct_problem_img_wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 100%;
+}
+
+.ct_problem_img_wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px;
+    aspect-ratio: 4/5;
+}
+
+.ct_problem_summary_box {
+    border: 1px solid #111111;
+    border-radius: 24px;
+    background-color: #ffffff;
+    padding: 36px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.ct_problem_summary_box p {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 1.65;
+}
+
+/* --------------------------------------------------------------------------
+   8. Technology Partner Section (3 Stacked Images)
+   -------------------------------------------------------------------------- */
+.ct_about_partner_section {
+    position: relative;
+}
+
+.ct_partner_points {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.ct_partner_point_item {
+    position: relative;
+    padding-left: 0;
+}
+
+.ct_partner_icon {
+    font-size: 22px;
+    color: var(--brand-blue);
+    flex-shrink: 0;
+    line-height: 1;
+}
+
+.ct_partner_point_title {
+    font-size: 20px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    letter-spacing: -0.2px;
+}
+
+.ct_partner_point_desc {
+    font-size: 16px;
+    line-height: 1.55;
+    color: var(--secondary-color);
+    margin-top: 6px;
+    max-width: 544px;
+}
+
+.ct_partner_images_stack {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ct_partner_images_stack img {
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    display: block;
+}
+
+.ct_partner_images_stack img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.1);
+}
+
+/* --------------------------------------------------------------------------
+   9. Leadership Section
+   -------------------------------------------------------------------------- */
+.ct_about_leadership_section {
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 542.06%);
+
+    position: relative;
+}
+
+.ct_about_leadership_section .ct_section_title {
+    letter-spacing: -0.5px;
+}
+
+.ct_leader_card {
+    background-color: transparent;
+    border-radius: 0;
+    overflow: visible;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transition: transform 0.35s ease;
+}
+
+.ct_leader_card:hover {
+    transform: translateY(-6px);
+    box-shadow: none;
+}
+
+.ct_leader_img_wrap {
+    width: 100%;
+    aspect-ratio: 1 / 1.05;
+    border-radius: 28px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ct_leader_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.ct_leader_card:hover .ct_leader_img {
+    transform: scale(1.04);
+}
+
+.ct_leader_info {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.ct_leader_name {
+    margin-bottom: 6px;
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1.25;
+    letter-spacing: -0.3px;
+}
+
+.ct_leader_role {
+    margin-bottom: 16px;
+    display: inline-block;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.ct_leader_bio {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.ct_leader_social {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.ct_leader_social .ct_social_icon_btn {
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    font-size: 26px;
+    text-decoration: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    line-height: 1;
+}
+
+.ct_leader_social .ct_social_icon_btn:hover {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: transparent;
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   10. Guiding Principles / Values Section (Building With Purpose & Integrity)
+   -------------------------------------------------------------------------- */
+.ct_about_values_section {
+    position: relative;
+}
+
+.ct_values_sticky_col {
+    position: relative;
+}
+
+.ct_values_sticky_box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 130px;
+    z-index: 5;
+}
+
+.ct_values_desc {
+    margin-top: 22px;
+    max-width: 480px;
+}
+
+.ct_values_cards_stack {
+    position: relative;
+}
+
+.ct_value_item_card {
+    background-color: #E0E0E080;
+    border: none;
+    border-radius: 20px;
+    padding: 30px 20px;
+    margin-bottom: 24px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.ct_value_item_card:last-child {
+    margin-bottom: 0;
+}
+
+.ct_value_item_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.ct_value_dot {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: var(--brand-blue);
+    margin-bottom: 64px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ct_value_title {
+    font-size: 28px;
+    line-height: 1.3;
+    color: var(--primary-color);
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    max-width: 535px;
+}
+
+.ct_value_line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--brand-blue);
+    margin-bottom: 16px;
+}
+
+.ct_value_desc {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--secondary-color);
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   11. CTA Banner Section (Building With Purpose & Integrity - Full Width)
+   -------------------------------------------------------------------------- */
+.ct_about_cta_section {
+    background: linear-gradient(95.08deg, #E2EDF9 -173.24%, #4695C4 103.2%);
+
+
+    position: relative;
+    padding: 47px 0;
+    width: 100%;
+}
+
+.ct_cta_text_blue {
+    color: var(--brand-blue) !important;
+}
+
+.ct_cta_desc {
+    color: rgba(255, 255, 255, 1);
+    max-width: 443px;
+    line-height: 24px;
+}
+
+.ct_cta_btn_dark_pill,
+.ct_btn_dark_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--brand-blue);
+    color: #ffffff !important;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    padding: 14px 34px;
+    border-radius: 50px;
+    border: 1px solid var(--brand-blue);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-size: 14px;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ct_cta_btn_dark_pill span,
+.ct_btn_dark_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_cta_btn_dark_pill::before,
+.ct_btn_dark_pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_cta_btn_dark_pill:hover::before,
+.ct_btn_dark_pill:hover::before {
+    width: 100%;
+}
+
+.ct_cta_btn_dark_pill:hover,
+.ct_btn_dark_pill:hover {
+    color: var(--brand-blue) !important;
+    border-color: #ffffff;
+    box-shadow: 0 10px 24px rgba(20, 128, 198, 0.35);
+}
+
+.ct_cta_btn_dark_pill:hover span,
+.ct_btn_dark_pill:hover span {
+    color: var(--brand-blue) !important;
+}
+
+.ct_cta_btn_white_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    background-color: #ffffff;
+    color: var(--brand-blue) !important;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.ct_cta_btn_white_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_cta_btn_white_pill::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--brand-blue);
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_cta_btn_white_pill:hover::before {
+    width: 100%;
+}
+
+.ct_cta_btn_white_pill:hover {
+    color: #ffffff !important;
+    border-color: var(--brand-blue);
+    box-shadow: 0 10px 24px rgba(20, 128, 198, 0.35);
+}
+
+.ct_cta_btn_white_pill:hover span {
+    color: #ffffff !important;
+}
+
+.ct_cta_img_card {
+    border-radius: 28px;
+    overflow: hidden;
+    width: 100%;
+    height: 480px;
+
+}
+
+.ct_cta_banner_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+}
+
+/* --------------------------------------------------------------------------
+   12. Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+    .ct_about_hero_section {
+        padding-top: 120px;
+        padding-bottom: 60px;
+    }
+
+    .ct_about_banner_shape {
+        max-height: 400px;
+    }
+
+    .ct_growth_item {
+        gap: 24px;
+    }
+
+    .ct_growth_img_wrap {
+        width: 210px;
+        height: 150px;
+    }
+
+    .ct_growth_year_title {
+        font-size: 24px;
+    }
+
+    .ct_growth_desc_wrap {
+        max-width: 380px;
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .ct_about_hero_section {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    .ct_about_hero_desc {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ct_about_banner_shape {
+        max-height: 320px;
+        margin-top: 30px;
+    }
+
+    .ct_growth_row {
+        padding: 24px 0;
+    }
+
+    .ct_growth_item {
+        flex-wrap: wrap;
+        gap: 16px 24px;
+    }
+
+    .ct_growth_img_wrap {
+        width: 200px;
+        height: 140px;
+    }
+
+    .ct_growth_year_title {
+        font-size: 24px;
+    }
+
+    .ct_growth_desc_wrap {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-top: 4px;
+    }
+
+
+
+
+
+    .ct_about_ai_img_wrap img {
+        min-height: auto;
+        height: 440px;
+    }
+
+    .ct_problem_grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .ct_problem_grid_card_01 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .ct_problem_grid_card_02 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .ct_problem_grid_card_03 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .ct_problem_grid_card_04 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .ct_problem_grid_card_05 {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .ct_problem_grid_img {
+        grid-column: 2;
+        grid-row: 3;
+        height: 100%;
+        min-height: 100%;
+    }
+
+    .ct_problem_grid_summary {
+        grid-column: 1 / span 2;
+        grid-row: 4;
+    }
+
+    .ct_problem_card {
+        padding: 30px 24px;
+    }
+
+    .ct_problem_card_head {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .ct_problem_num {
+        font-size: 48px;
+    }
+
+    .ct_problem_title {
+        font-size: 14px;
+        line-height: 1.3;
+    }
+
+    .ct_problem_desc {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+    .ct_problem_img_wrap img {
+        aspect-ratio: auto;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .ct_problem_summary_box {
+        padding: 28px 28px;
+    }
+
+    .ct_problem_summary_box p {
+        font-size: 17px;
+    }
+
+    .ct_partner_images_stack {
+        margin-top: 24px;
+        gap: 18px;
+    }
+
+    .ct_partner_images_stack img {
+        height: 230px;
+        border-radius: 20px;
+    }
+
+    .ct_leader_name {
+        font-size: 26px;
+    }
+
+    .ct_leader_img_wrap {
+        border-radius: 22px;
+    }
+
+    .ct_values_sticky_box {
+        position: static;
+        margin-bottom: 32px;
+    }
+
+    .ct_values_desc {
+        max-width: 100%;
+        margin-top: 16px;
+    }
+
+    .ct_value_item_card {
+        position: relative;
+        top: auto;
+        padding: 30px 28px 26px;
+        border-radius: 20px;
+        margin-bottom: 18px;
+    }
+
+    .ct_value_dot {
+
+        margin-bottom: 22px;
+    }
+
+    .ct_value_title {
+        font-size: 19px;
+    }
+
+    .ct_cta_img_card {
+        height: 380px;
+        margin-top: 10px;
+        border-radius: 22px;
+    }
+
+    .ct_about_cta_card {
+        border-radius: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ct_about_hero_section {
+        padding-top: 90px;
+        padding-bottom: 40px;
+    }
+
+    .ct_partner_point_title {
+        font-size: 18px;
+    }
+
+    .ct_about_stat_box {
+        padding: 12px 6px;
+    }
+
+    .ct_about_stat_num {
+        font-size: 38px;
+    }
+
+    .ct_about_stat_label {
+        font-size: 15px;
+    }
+
+    .ct_cap_card {
+        padding: 26px 20px;
+    }
+
+    .ct_cap_num {
+        font-size: 52px;
+        margin-bottom: 16px;
+    }
+
+    .ct_cap_title {
+        font-size: 20px;
+    }
+
+    .ct_value_item_card {
+        padding: 18px 18px;
+    }
+
+    .ct_growth_row {
+        padding: 20px 0;
+    }
+
+    .ct_growth_item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .ct_growth_img_wrap {
+        width: 100%;
+        max-width: 260px;
+        height: 160px;
+    }
+
+    .ct_growth_year_title {
+        font-size: 22px;
+    }
+
+    .ct_growth_desc_wrap {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+    }
+
+    .ct_about_ai_img_wrap img {
+        min-height: auto;
+        height: 340px;
+    }
+
+    .ct_problem_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 16px;
+    }
+
+    .ct_problem_grid_card_01,
+    .ct_problem_grid_card_02,
+    .ct_problem_grid_card_03,
+    .ct_problem_grid_card_04,
+    .ct_problem_grid_card_05,
+    .ct_problem_grid_img,
+    .ct_problem_grid_summary {
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .ct_problem_grid_img {
+        height: 300px;
+        min-height: auto;
+    }
+
+    .ct_problem_img_wrap img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: auto;
+    }
+
+    .ct_problem_card {
+        padding: 24px 20px;
+    }
+
+    .ct_problem_card_head {
+        gap: 10px;
+        margin-bottom: 14px;
+    }
+
+    .ct_problem_num {
+        font-size: 42px;
+    }
+
+    .ct_problem_title {
+        font-size: 13px;
+    }
+
+    .ct_problem_desc {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+    .ct_problem_summary_box {
+        padding: 24px 20px;
+    }
+
+    .ct_problem_summary_box p {
+        font-size: 15px;
+    }
+
+    .ct_partner_points {
+        gap: 22px;
+    }
+
+    .ct_partner_images_stack {
+        margin-top: 16px;
+        gap: 16px;
+    }
+
+    .ct_partner_images_stack img {
+        height: 200px;
+        border-radius: 16px;
+    }
+
+    .ct_partner_icon {
+        font-size: 19px;
+    }
+
+
+
+    .ct_leader_img_wrap {
+        border-radius: 20px;
+    }
+
+    .ct_values_sticky_box {
+        margin-bottom: 24px;
+    }
+
+    .ct_value_item_card {
+        padding: 24px 20px 22px;
+        border-radius: 18px;
+        margin-bottom: 14px;
+    }
+
+
+
+    .ct_value_title {
+        font-size: 17px;
+    }
+
+    .ct_value_desc {
+        font-size: 14.5px;
+    }
+
+    .ct_cta_img_card {
+        height: 300px;
+        border-radius: 18px;
+    }
+
+    .ct_about_cta_card {
+        border-radius: 20px;
+    }
+
+    .ct_cta_btn_dark_pill,
+    .ct_cta_btn_white_pill,
+    .ct_about_cta_section .ct_btn_discuss,
+    .ct_about_cta_section .ct_btn_white_pill {
+        width: 100%;
+        text-align: center;
+    }
+}

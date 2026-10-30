@@ -24,6 +24,7 @@
 
 .ct_fs_52 {
     font-size: 52px;
+    line-height: 56px;
 }
 
 .ct_fs_34 {
@@ -44,6 +45,15 @@
 
 .ct_fs_20 {
     font-size: 20px;
+    line-height: 24px;
+}
+
+.ct_fs_18 {
+    font-size: 18px;
+}
+
+.ct_fs_16 {
+    font-size: 16px;
 }
 
 .ct_fs_14 {
@@ -125,4 +135,16 @@ body {
 
 .ct_mb_36 {
     margin-bottom: 36px;
+}
+
+.ct_pb_64 {
+    padding-bottom: 64px;
+}
+
+.ct_mb_32 {
+    margin-bottom: 32px !important;
+}
+
+.ct_mb_40 {
+    margin-bottom: 40px;
 }

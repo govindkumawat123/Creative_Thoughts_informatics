@@ -1,0 +1,1453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile App Development Services - Creative Thoughts Informatics</title>
+    <meta name="description"
+        content="Build powerful, user-friendly mobile apps for iOS and Android with Creative Thoughts Informatics. Custom mobile app development for startups, enterprises, and growing businesses.">
+
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font Awesome 6 Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/common.css?v=2.1">
+    <link rel="stylesheet" href="assets/css/header.css?v=2.1">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.6">
+    <link rel="stylesheet" href="assets/css/about.css?v=1.1">
+    <link rel="stylesheet" href="assets/css/contact.css?v=1.1">
+    <link rel="stylesheet" href="assets/css/case-study.css?v=2.2">
+    <link rel="stylesheet" href="assets/css/services.css?v=1.4">
+    <link rel="stylesheet" href="assets/css/footer.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=2.6">
+</head>
+
+<body>
+
+    <!-- =========================================================================
+         Header Section (Reused from Main Navigation)
+         ========================================================================= -->
+    <header class="ct_header">
+        <div class="container">
+            <div class="ct_header_inner">
+                <!-- Brand Logo (Left) -->
+                <div class="ct_header_left">
+                    <a href="index.html" class="ct_header_logo">
+                        <img src="assets/img/logo_black.svg" alt="Creative Thoughts Informatics - You Think We Build">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu (Centered on Desktop, Slide Drawer on <=1199px) -->
+                <nav class="ct_nav_menu" id="ctNavMenu">
+                    <!-- Drawer Header (visible on mobile drawer <=1199px) -->
+                    <div class="ct_drawer_header">
+                        <a href="index.html" class="ct_drawer_logo">
+                            <img src="assets/img/logo_black.svg" alt="Creative Thoughts Informatics">
+                        </a>
+                        <button type="button" class="ct_drawer_close" aria-label="Close menu">&times;</button>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="ct_nav_list">
+                        <li class="ct_nav_item"><a href="index.html" class="ct_nav_link ct_fs_14">HOME</a></li>
+                        <li class="ct_nav_item"><a href="web-development.html"
+                                class="ct_nav_link ct_fs_14 active">SERVICES</a></li>
+                        <li class="ct_nav_item"><a href="index.html#industries"
+                                class="ct_nav_link ct_fs_14">INDUSTRIES</a></li>
+                        <li class="ct_nav_item"><a href="index.html#solutions"
+                                class="ct_nav_link ct_fs_14">SOLUTIONS</a></li>
+                        <li class="ct_nav_item"><a href="case-study.html" class="ct_nav_link ct_fs_14">CASE-STUDIES</a>
+                        </li>
+                        <li class="ct_nav_item"><a href="about-us.html" class="ct_nav_link ct_fs_14">ABOUT</a></li>
+                        <li class="ct_nav_item"><a href="our-team.html" class="ct_nav_link ct_fs_14">TEAM</a></li>
+                        <li class="ct_nav_item"><a href="blog.html" class="ct_nav_link ct_fs_14">BLOG</a></li>
+                    </ul>
+
+                    <!-- Drawer Contact Button (visible only in mobile drawer) -->
+                    <div class="ct_drawer_btn_wrap">
+                        <a href="contact-us.html" class="ct_header_btn ct_fs_14"><span>Contact</span></a>
+                    </div>
+                </nav>
+
+                <!-- Header Right Action (Contact Button & Hamburger Toggle) -->
+                <div class="ct_header_right">
+                    <a href="contact-us.html" class="ct_header_btn ct_fs_14"><span>Contact</span></a>
+                    <button type="button" class="ct_menu_toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Backdrop Overlay -->
+                <div class="ct_nav_backdrop"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         1. Hero Section: Web Development That Works Around Your Business
+         (Using classes from case study page: ct_cs_hero_section, ct_cs_hero_title, ct_cs_hero_desc, ct_btn_white_pill)
+         ========================================================================= -->
+    <section class="ct_cs_hero_section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-12">
+                    <!-- Hero Main Title -->
+                    <h1 class="ct_cs_hero_title ct_ff_satoshi_bold ct_fs_52 text-white text-uppercase">
+                        Custom Software Development <br> for Your Business
+
+                    </h1>
+
+                    <!-- Hero Description -->
+                    <p class="ct_cs_hero_desc ct_ff_satoshi_regular ct_fs_20 text-white mx-auto">
+                        Build custom software around your business processes, goals, and technical requirements.
+                        Creative Thoughts Informatics develops business applications, software platforms, and integrated
+                        systems designed to solve real problems and support growth.
+
+                    </p>
+
+                    <!-- Hero Action Buttons -->
+                    <div class="d-flex justify-content-center align-items-center gap-3 flex-wrap">
+                        <a href="contact-us.html" class="ct_btn_white_pill ct_ff_satoshi_bold ct_fs_14">
+                            <span>Discuss Your Project
+
+                                &rarr;</span>
+                        </a>
+                        <a href="contact-us.html" class="ct_btn_white_pill ct_ff_satoshi_bold ct_fs_14">
+                            <span>Explore Our Work
+
+                                &rarr;</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         2. Capabilities Grid: CUSTOM ENTERPRISE SOFTWARE SOLUTIONS (01 - 08)
+         ========================================================================= -->
+    <section class="ct_about_capabilities_section ct_py_120" id="services-capabilities">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="ct_section_head text-center ct_mb_64">
+                <h2 class="ct_section_title ct_ff_satoshi_bold ct_fs_52 mb-0 text-uppercase">
+                    CUSTOM ENTERPRISE SOFTWARE<br>
+                    <span class="ct_text_blue">SOLUTIONS FOR YOUR BUSINESS</span>
+                </h2>
+
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-9 col-md-10 col-12">
+                        <p class="ct_ff_satoshi_regular ct_fs_20 ct_text_secondary mb-0">
+                            Every business has different processes, systems, and operational needs. We develop and improve enterprise software to help organizations manage their workflows, connect applications, and support changing business requirements.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- 8 Capabilities Cards Grid (2 rows of 4) -->
+            <div class="row g-4">
+                <!-- Card 01 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">01</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            CUSTOM ENTERPRISE <br>SOFTWARE DEVELOPMENT
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Build business applications, internal platforms, portals, and workflow systems around your organization's requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 02 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">02</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE SYSTEM <br>INTEGRATION
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Connect ERP, CRM, HR, inventory, payment, and other business systems to improve data sharing and reduce manual work.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 03 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">03</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            LEGACY SOFTWARE <br>MODERNIZATION
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Improve older applications through updated architecture, redesigned interfaces, API development, and phased modernization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 04 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">04</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE API <br>DEVELOPMENT
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Develop APIs that allow enterprise applications, databases, web platforms, and third-party services to communicate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 05 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">05</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE CLOUD <br>DEVELOPMENT &amp; MIGRATION
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Modernize applications or move systems to cloud environments based on your technical and business requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 06 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">06</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE DATA &amp; <br>ANALYTICS SOLUTIONS
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Develop dashboards, reporting platforms, and data-driven applications that help teams understand business information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 07 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">07</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE AI &amp; <br>AUTOMATION
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Integrate AI assistants, document processing, intelligent search, and workflow automation where they address real business needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 08 -->
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="ct_cap_card">
+                        <div class="ct_cap_num ct_ff_satoshi_bold ct_text_blue">08</div>
+                        <h3 class="ct_fs_20 ct_ff_satoshi_bold ct_text_primary text-uppercase mb-3">
+                            ENTERPRISE SOFTWARE <br>MAINTENANCE &amp; SUPPORT
+                        </h3>
+                        <p class="ct_cap_desc ct_ff_satoshi_regular ct_text_secondary">
+                            Maintain existing applications through bug fixes, performance improvements, security updates, integration changes, and new features.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         4. Web Solutions Showcase: WEB SOLUTIONS FOR DIFFERENT BUSINESS NEEDS
+         ========================================================================= -->
+    <section class="ct_py_120 pt-0">
+        <div class="container">
+            <div class="ct_section_head ct_mb_64">
+                <div class="row  justify-content-between g-3">
+                    <div class="col-lg-8 col-12">
+                        <h2 class="ct_section_title ct_ff_satoshi_bold ct_fs_52 text-uppercase mb-2">
+                            Software Designed for<br>
+                            <span class="ct_text_blue">Different Business Needs</span>
+                        </h2>
+                        <p class="ct_ff_satoshi_regular ct_fs_20 ct_text_secondary mb-0" style="max-width: 650px;">
+                            We develop custom software based on your workflows, users, and operational requirements.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-12 text-lg-end">
+                        <div class="d-inline-flex gap-2">
+                            <button type="button" class="ct_slider_arrow ct_solution_prev" aria-label="Previous Slide">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button type="button" class="ct_slider_arrow ct_solution_next active"
+                                aria-label="Next Slide">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Web Solutions Swiper Slider -->
+            <div class="swiper ct_web_solutions_swiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1: Consumer Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/software_web_img_1.webp" alt="Consumer Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    Business <br>Applications
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Business management systems, employee portals, and workflow tools.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2: Enterprise Mobile Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/software_web_img_2.webp" alt="Enterprise Mobile Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    Management <br>Systems
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Inventory, order management, reporting, and document management systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3: E-Commerce Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/software_web_img_3.webp" alt="E-Commerce Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    Digital <br>Platforms
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Customer portals, vendor portals, marketplaces, and B2B platforms.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4: On-Demand Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/software_web_img_4.webp" alt="On-Demand Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    Web & Cloud <br>Applications
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Inventory, order management, reporting, and document management systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5: HealthTech Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/software_web_img_5.webp" alt="HealthTech Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    Integrated <br>Applications
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Inventory, order management, reporting, and document management systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6: EdTech Apps -->
+                    <div class="swiper-slide">
+                        <div class="ct_services_solution_card">
+                            <div class="ct_services_solution_img_wrap">
+                                <img src="assets/img/Services/web_solution_img_1.webp" alt="EdTech Apps">
+                            </div>
+                            <div class="ct_services_solution_body">
+                                <h3 class="ct_services_solution_title ct_ff_satoshi_bold">
+                                    EDTECH<br>APPS
+                                </h3>
+                                <p class="ct_ff_satoshi_regular ct_fs_16 ct_text_secondary mb-0">
+                                    Learning platforms, course delivery, and student engagement mobile apps.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         6. Web Experiences Designed For Users (web_experience_img.webp)
+         ========================================================================= -->
+    <section class="ct_py_120 pt-0">
+        <div class="container">
+            <div class="row align-items-center g-5 ct_row_reverse_991">
+                <!-- Left: Visual Container -->
+                <div class="col-lg-5 col-12">
+                    <div class="ct_services_img_card" style="aspect-ratio: 9/15;">
+                        <img src="assets/img/Services/should-you_choose_left_img.webp"
+                            alt="Web Experiences Designed For Users" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Right: Content & Bullet Checks -->
+                <div class="col-lg-7 col-12">
+                    <h2 class="ct_section_title ct_ff_satoshi_bold ct_fs_52 mb-3">
+                        Should You Choose
+                        <br>
+                        <span class="ct_text_blue">Custom Software?</span>
+                    </h2>
+                    <p class="ct_services_lead_desc ct_ff_satoshi_regular ct_fs_20 mb-4">
+                        Ready-made software can work well for standard business requirements. Custom software may be a
+                        better fit when your business needs specific workflows, features, integrations, or greater
+                        control over how a system operates.
+                    </p>
+                    <h4 class="ct_ff_satoshi_bold ct_fs_20 ct_text_primary mb-4">Custom software may be worth
+                        considering if:</h4>
+                    <!-- Capabilities Checklist -->
+                    <div class="d-flex flex-column gap-3 mb-5">
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="d-inline-flex flex-shrink-0 align-items-center justify-content-center">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="5" fill="#1E7EB8" />
+                                    <path d="M5.5 10L8.5 13L14.5 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="ct_ff_satoshi_regular ct_fs_18 ct_text_primary">Your existing tools cannot
+                                support your business processes
+                            </span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="d-inline-flex flex-shrink-0 align-items-center justify-content-center">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="5" fill="#1E7EB8" />
+                                    <path d="M5.5 10L8.5 13L14.5 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="ct_ff_satoshi_regular ct_fs_18 ct_text_primary">Your team relies heavily on
+                                spreadsheets or manual work</span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="d-inline-flex flex-shrink-0 align-items-center justify-content-center">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="5" fill="#1E7EB8" />
+                                    <path d="M5.5 10L8.5 13L14.5 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="ct_ff_satoshi_regular ct_fs_18 ct_text_primary">Multiple systems need to
+                                exchange information.
+                            </span>
+                        </div>
+
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="d-inline-flex flex-shrink-0 align-items-center justify-content-center">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="5" fill="#1E7EB8" />
+                                    <path d="M5.5 10L8.5 13L14.5 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="ct_ff_satoshi_regular ct_fs_18 ct_text_primary">You need features tailored to
+                                your operations.</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-3">
+                            <span class="d-inline-flex flex-shrink-0 align-items-center justify-content-center">
+                                <svg width="22" height="22" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="20" height="20" rx="5" fill="#1E7EB8" />
+                                    <path d="M5.5 10L8.5 13L14.5 7" stroke="white" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="ct_ff_satoshi_regular ct_fs_18 ct_text_primary">You want to develop your own
+                                software product.</span>
+                        </div>
+                        <p class="ct_fs_20 ct_ff_satoshi_regular mt-2">The right approach depends on your requirements,
+                            budget, and long-term goals.</p>
+                    </div>
+
+
+
+                    <a href="contact-us.html" class="ct_btn_discuss ct_fs_14 ct_ff_satoshi_bold">
+                        <span>Find the Right Software Approach <i class="fa-solid fa-arrow-right ms-2"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- =========================================================================
+         10. From Requirements to Launch (Interactive Timeline from Case Study)
+         ========================================================================= -->
+    <section class="ct_cs_approach_section pt-0" id="services-process">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="ct_section_head text-center ct_mb_64">
+                <h2 class="ct_section_title ct_ff_satoshi_bold ct_fs_52 mb-0">
+                    From Requirements
+                    <br>
+                    <span class="ct_text_blue"> to Working Software</span>
+                </h2>
+                <p class="ct_fs_20 mt-4 ct_ff_satoshi_regular mb-0 mx-auto" style="max-width: 640px;">Our development
+                    process focuses on understanding
+                    your
+                    requirements, planning the solution, and
+                    building software around your business needs.</p>
+            </div>
+
+            <!-- Timeline Wrap (Reused from case-study.html) -->
+            <div class="ct_cs_timeline_wrap">
+                <!-- Scroll Progress Line (Track & Fill) -->
+                <div class="ct_cs_timeline_track">
+                    <div class="ct_cs_timeline_fill" id="ctTimelineFill"></div>
+                </div>
+
+                <!-- Step 01 -->
+                <div class="ct_cs_step_row active">
+                    <div class="ct_cs_step_left">
+                        <span class="ct_cs_step_num">01</span>
+                        <h4 class="ct_cs_step_title">Discovery & <br> Planning</h4>
+                    </div>
+                    <div class="ct_cs_step_center">
+                        <div class="ct_cs_step_dot ct_cs_step_dot_blue"></div>
+                    </div>
+                    <div class="ct_cs_step_right">
+                        <p class="ct_cs_step_text ct_ff_satoshi_regular">
+                            Understand your business goals, workflows, users, and technical requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="ct_cs_step_row">
+                    <div class="ct_cs_step_left">
+                        <span class="ct_cs_step_num">02</span>
+                        <h4 class="ct_cs_step_title">UI/UX & Architecture</h4>
+                    </div>
+                    <div class="ct_cs_step_center">
+                        <div class="ct_cs_step_dot"></div>
+                    </div>
+                    <div class="ct_cs_step_right">
+                        <p class="ct_cs_step_text ct_ff_satoshi_regular">
+                            Plan the user experience, application structure, integrations, and technology.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="ct_cs_step_row">
+                    <div class="ct_cs_step_left">
+                        <span class="ct_cs_step_num">03</span>
+                        <h4 class="ct_cs_step_title">Development</h4>
+                    </div>
+                    <div class="ct_cs_step_center">
+                        <div class="ct_cs_step_dot"></div>
+                    </div>
+                    <div class="ct_cs_step_right">
+                        <p class="ct_cs_step_text ct_ff_satoshi_regular">
+                            Build the software, including its interfaces, backend, database, and required integrations.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 04 -->
+                <div class="ct_cs_step_row">
+                    <div class="ct_cs_step_left">
+                        <span class="ct_cs_step_num">04</span>
+                        <h4 class="ct_cs_step_title">Testing & Deployment</h4>
+                    </div>
+                    <div class="ct_cs_step_center">
+                        <div class="ct_cs_step_dot"></div>
+                    </div>
+                    <div class="ct_cs_step_right">
+                        <p class="ct_cs_step_text ct_ff_satoshi_regular">
+                            Test functionality and performance before preparing the software for launch.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 05 -->
+                <div class="ct_cs_step_row">
+                    <div class="ct_cs_step_left">
+                        <span class="ct_cs_step_num">05</span>
+                        <h4 class="ct_cs_step_title">Support & <br> Improvements</h4>
+                    </div>
+                    <div class="ct_cs_step_center">
+                        <div class="ct_cs_step_dot"></div>
+                    </div>
+                    <div class="ct_cs_step_right">
+                        <p class="ct_cs_step_text ct_ff_satoshi_regular">
+                            Help maintain and improve the software as your requirements evolve.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="ct_services_tech_section ct_py_120" id="tech-stack">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="ct_section_head text-center ct_mb_64">
+                <h2 class="ct_section_title ct_ff_satoshi_bold ct_fs_52 text-white">
+                    Choosing the Right Technology <br> for Your Project
+
+                </h2>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <p class="ct_ff_satoshi_regular ct_fs_20 text-white  mb-0 mx-auto">
+                            We select technologies based on your project requirements, functionality, and future plans.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Top Row: iOS, Android, Backend -->
+            <div class="row g-4 mb-4">
+                <!-- 1. iOS -->
+                <div class="col-xxl-5 col-xl-5 col-lg-6 col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M4 3H20C21.1038 3 22 3.89617 22 5V15C22 16.1038 21.1038 17 20 17H4C2.89617 17 2 16.1038 2 15V5C2 3.89617 2.89617 3 4 3V3"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                    <path d="M8 21H16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                    <path d="M12 17V21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                </svg>
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">Frontend</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/react_icon.png" alt="React" class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">React</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/angular_icon.png" alt="Angular"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Angular</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/javascript_icon.svg" alt="JavaScript"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">JavaScript</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/html5_icon.svg" alt="HTML" class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">HTML</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/css3_icon.svg" alt="CSS" class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-4 col-xl-4 col-lg-6 col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3 5C3 6.65575 7.03276 8 12 8C16.9672 8 21 6.65575 21 5C21 3.34425 16.9672 2 12 2C7.03276 2 3 3.34425 3 5V5"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                    <path d="M21 12C21 13.66 17 15 12 15C7 15 3 13.66 3 12" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke="#1E7EB8"></path>
+                                    <path d="M3 5V19C3 20.66 7 22 12 22C17 22 21 20.66 21 19V5" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round" stroke="#1E7EB8"></path>
+                                </svg>
+
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">Backend</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/python_icon.png" alt="Python"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Python</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/php_icon.svg" alt="PHP" class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">PHP</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/node_js_icon.png" alt="Node.js"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-12 col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7 2H17C18.1038 2 19 2.89617 19 4V20C19 21.1038 18.1038 22 17 22H7C5.89617 22 5 21.1038 5 20V4C5 2.89617 5.89617 2 7 2V2"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                    <path d="M12 18H12.01" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke="#1E7EB8"></path>
+                                </svg>
+
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">Mobile</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/react_icon.png" alt="React Native"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">React Native</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/flutter_icon.png" alt="Flutter"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Flutter</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Infrastructure (col-lg-8 col-12) -->
+                <div class="col-xxl-3 col-xl-3 col-lg-6  col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 13C10.869 14.1617 12.1996 14.8887 13.6466 14.9923C15.0937 15.0959 16.5144 14.566 17.54 13.54L20.54 10.54C22.4349 8.57807 22.4078 5.45954 20.4791 3.53087C18.5504 1.6022 15.4319 1.57511 13.47 3.46997L11.75 5.17997"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                    <path
+                                        d="M13.9982 11.0012C13.1293 9.83952 11.7986 9.11252 10.3516 9.00888C8.90458 8.90525 7.48388 9.43521 6.45825 10.4612L3.45825 13.4612C1.56339 15.4231 1.59049 18.5416 3.51915 20.4703C5.44782 22.399 8.56635 22.4261 10.5282 20.5312L12.2382 18.8212"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke="#1E7EB8"></path>
+                                </svg>
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">APIs & Integration</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/rest_api_icon.svg" alt="REST APIs"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">REST <br> APIs</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/third_party_api_icon.svg" alt="Third-Party APIs"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Third-Party <br> APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5. Infrastructure (col-lg-8 col-12) -->
+                <div class="col-xxl-5 col-xl-5 col-lg-6  col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_666_2697)">
+                                        <path
+                                            d="M17.9985 10.001H16.7385C15.699 5.97489 11.7484 3.4164 7.64932 4.11456C3.55022 4.81273 0.669373 8.53475 1.02125 12.678C1.37312 16.8212 4.84038 20.0041 8.99852 20.001H17.9985C20.7581 20.001 22.9985 17.7606 22.9985 15.001C22.9985 12.2414 20.7581 10.001 17.9985 10.001V10.001"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke="#1E7EB8"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_666_2697">
+                                            <rect width="24" height="24" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">Cloud</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/aws_icon.png" alt="AWS" class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Cloud <br> applications</span>
+                            </div>
+
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/docker_icon.svg" alt="Docker"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">deployment</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/vercel_icon.svg" alt="Vercel"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">infrastructure</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/vercel_icon.svg" alt="Vercel"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">migration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xxl-4 col-xl-4 col-lg-6  col-12">
+                    <div class="ct_services_tech_card">
+                        <div class="ct_services_tech_card_head">
+                            <div class="ct_tech_cat_icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.75 8.25H15V15.75H12.75V17.25H18.75V15.75H16.5V8.25H18.75V6.75H12.75V8.25ZM9.75 6.75H6.75C5.92275 6.75 5.25 7.42275 5.25 8.25V17.25H6.75V13.5H9.75V17.25H11.25V8.25C11.25 7.42275 10.5773 6.75 9.75 6.75ZM6.75 12V8.25H9.75V12H6.75Z"
+                                        fill="#1E7EB8" />
+                                </svg>
+
+
+                            </div>
+                            <h3 class="ct_tech_cat_title ct_ff_satoshi_bold">AI & Automation</h3>
+                        </div>
+                        <div class="ct_tech_items_row">
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/ai_powered_icon.png" alt="AWS"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">AI-Powered <br> Features</span>
+                            </div>
+
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/Intelligent-automation-icon.png" alt="Docker"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Intelligent <br>
+                                    Automation</span>
+                            </div>
+                            <div class="ct_tech_item_badge">
+                                <img src="assets/img/tech_icons/business_process_icon.png" alt="Vercel"
+                                    class="ct_tech_badge_icon">
+                                <span class="ct_tech_badge_name ct_ff_satoshi_medium">Business <br>
+                                    Process <br>
+                                    Automation</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         9. Why Choose Creative Thoughts Informatics? Section
+         (Left: Title, Subtitle, 6 Value Points | Right: 3 Stacked Images)
+         ========================================================================= -->
+    <section class="ct_about_partner_section ct_py_120" id="why-choose">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: 6 Value Points -->
+                <div class="col-lg-7 col-12">
+                    <h2 class="ct_about_sec_title ct_ff_satoshi_bold ct_fs_52 ct_mb_64">
+                        WHY CHOOSE<br>
+                        <span class="ct_text_blue">CREATIVE THOUGHTS<br>INFORMATICS?</span>
+                    </h2>
+
+                    <h3 class="ct_ff_satoshi_bold ct_fs_24 ct_text_primary mb-4 pb-2">
+                        A Practical Approach to Software Development
+                    </h3>
+
+                    <div class="ct_partner_points d-flex flex-column gap-3">
+                        <!-- Point 1 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">Business-First Planning
+                                </h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We start by understanding your business problem and requirements.
+                            </p>
+                        </div>
+
+                        <!-- Point 2 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">Custom-Built Solutions
+                                </h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We develop software around your workflows, users, and goals.
+                            </p>
+                        </div>
+
+                        <!-- Point 3 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">End-to-End Development
+                                </h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We support the development process from planning and design through testing and
+                                deployment.
+                            </p>
+                        </div>
+
+                        <!-- Point 4 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">System Integration
+                                </h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We help connect your software with existing applications, APIs, and business systems.
+                            </p>
+                        </div>
+
+                        <!-- Point 5 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">Designed for Future Needs
+                                </h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We consider maintainability, performance, security, and future improvements during
+                                development.
+                            </p>
+                        </div>
+
+                        <!-- Point 6 -->
+                        <div class="ct_partner_point_item">
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <i class="fa-solid fa-circle-check ct_text_blue ct_partner_icon"></i>
+                                <h4 class="ct_partner_point_title ct_ff_satoshi_medium mb-0">Ongoing Support</h4>
+                            </div>
+                            <p class="ct_partner_point_desc ct_ff_satoshi_regular ct_text_secondary mb-0">
+                                We can help maintain and improve your software after launch.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: 3 Stacked Images -->
+                <div class="col-lg-5 col-12 mt-4 mt-lg-0">
+                    <div class="ct_partner_images_stack d-flex flex-column gap-2">
+                        <img src="assets/img/Services/sorfware_tech_img_1.webp" alt="Technology Partner Collaboration"
+                            class="img-fluid">
+                        <img src="assets/img/Services/sorfware_tech_img_2.webp" alt="Enterprise Software Development"
+                            class="img-fluid">
+                        <img src="assets/img/Services/sorfware_tech_img_3.webp" alt="Engineering Team at Work"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         11. Web Development Projects CTA Banner Box (Matching Target Design)
+         (Left: Staggered Rounded Image Cards | Right: Heading, Desc & Case Studies Button)
+         ========================================================================= -->
+    <section class="ct_py_120 pt-0">
+        <div class="container">
+            <div class="ct_services_cta_box text-white pe-0">
+                <!-- Left: Staggered Dummy Image Cards Graphic (Matching First Image) -->
+                <div class="ct_cta_left_graphic">
+                    <img src="assets/img/Services/web_projects_cta_left.webp" alt="Web Development Projects"
+                        class="ct_cta_graphic_img" style="height: 452px;">
+                </div>
+
+                <!-- Right: Content & Action Button -->
+                <div class="ct_cta_right_col pe-4">
+                    <h2 class="ct_ff_satoshi_bold ct_fs_52 text-white mb-4 text-uppercase">
+                        Software Built Around Real Requirements
+                    </h2>
+                    <p class="ct_ff_satoshi_regular ct_fs_20 text-white  ct_mb_32 ct_cta_desc">
+                        Explore our portfolio to learn more about the digital products and applications developed by
+                        Creative Thoughts Informatics.
+                    </p>
+                    <a href="case-study.html" class="ct_btn_white ct_fs_14 ct_ff_satoshi_bold">
+                        <span>Explore Our Work</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         12. Frequently Asked Questions (FAQ) Section (Light Theme, Centered)
+         ========================================================================= -->
+    <section class="ct_faq_section ct_faq_light ct_py_120 pt-0" id="faq">
+        <div class="container">
+            <div class="ct_faq_head text-center ct_mb_64">
+                <h2 class="ct_faq_title ct_ff_satoshi_bold ct_fs_52">
+                    FREQUENTLY ASKED <span class="ct_text_blue">QUESTIONS</span>
+                </h2>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9 col-12 mx-auto">
+                    <div class="ct_faq_accordion" id="faqAccordion">
+                        <!-- FAQ Item 1 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>How long does it take to build a mobile app?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    Mobile app timelines vary based on complexity, features, and platform choice. A
+                                    simple MVP app typically takes 6 to 10 weeks, while a full-featured consumer or
+                                    enterprise app can take 3 to 6 months. We provide a detailed roadmap during the
+                                    initial discovery phase.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 2 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>Should I build a native app or a cross-platform app?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    It depends on your budget, timeline, and performance requirements. Native apps
+                                    (Swift for iOS, Kotlin for Android) offer the best performance and platform
+                                    integration. Cross-platform frameworks like React Native and Flutter allow a single
+                                    codebase to work on both platforms, reducing development time and cost while
+                                    maintaining near-native performance.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 3 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>Do you help with publishing the app to the App Store and Google Play?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    Yes. We support end-to-end app store submission, including preparing store listings,
+                                    app screenshots, descriptions, and metadata. We also guide you through Apple and
+                                    Google review processes to ensure a smooth launch.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 4 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>Can you improve or rebuild an existing mobile app?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    Yes. We regularly help businesses redesign legacy apps, improve performance, migrate
+                                    to newer frameworks, add features, and fix technical debt — all without disrupting
+                                    your active user base.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 5 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>Do you provide post-launch maintenance and support?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    Yes. We offer flexible post-launch support packages covering OS update
+                                    compatibility, bug fixes, performance monitoring, security patches, and phased
+                                    feature additions to keep your app healthy and up to date.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- FAQ Item 6 -->
+                        <div class="ct_faq_item">
+                            <button class="ct_faq_question ct_ff_satoshi_regular" type="button" aria-expanded="false">
+                                <span>Who owns the source code and intellectual property?</span>
+                                <i class="fa-solid fa-chevron-down ct_faq_icon"></i>
+                            </button>
+                            <div class="ct_faq_answer">
+                                <p class="ct_ff_satoshi_regular">
+                                    You own 100% of the code, intellectual property, and design assets upon milestone
+                                    completion and final settlement. We transfer all repositories, documentation, and
+                                    cloud credentials directly to your team.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         14. Footer Section (Reused from Main Site Footer)
+         ========================================================================= -->
+    <div class="ct_faq_footer_wrapper">
+        <footer class="ct_footer_section">
+            <div class="container">
+                <div class="row g-5 align-items-start ct_ready_build_row">
+                    <!-- Left Column: Ready To Build Web Solution (Matching Reference Design) -->
+                    <div class="col-lg-6 col-12">
+                        <div class="ct_ready_build_box">
+                            <h2 class="ct_ready_build_title ct_ff_satoshi_bold text-white text-uppercase">
+                                READY TO BUILD YOUR WEB<br>SOLUTION?
+                            </h2>
+                            <p class="ct_ready_build_desc ct_fs_20 ct_ff_satoshi_regular">
+                                Have a new idea or want to improve your existing business systems? Creative Thoughts
+                                Informatics helps businesses turn their ideas into practical technology solutions.
+                            </p>
+
+                            <h4 class="ct_ready_build_subheading ct_ff_satoshi_bold text-white">
+                                How Can We Help You?
+                            </h4>
+
+                            <ul class="ct_ready_build_list list-unstyled">
+                                <li class="ct_ready_build_item">
+                                    <strong class="ct_ff_satoshi_bold text-white">Web & Mobile App Development:</strong>
+                                    <span class="ct_ff_satoshi_regular text-white opacity-90"> Build digital experiences
+                                        for your customers.</span>
+                                </li>
+                                <li class="ct_ready_build_item">
+                                    <strong class="ct_ff_satoshi_bold text-white">Custom Software Development:</strong>
+                                    <span class="ct_ff_satoshi_regular text-white opacity-90"> Simplify business
+                                        processes with tailored software.</span>
+                                </li>
+                                <li class="ct_ready_build_item">
+                                    <strong class="ct_ff_satoshi_bold text-white">AI Development & Automation:</strong>
+                                    <span class="ct_ff_satoshi_regular text-white opacity-90"> Improve productivity and
+                                        automate repetitive tasks.</span>
+                                </li>
+                                <li class="ct_ready_build_item">
+                                    <strong class="ct_ff_satoshi_bold text-white">SaaS & Product Development:</strong>
+                                    <span class="ct_ff_satoshi_regular text-white opacity-90"> Turn your idea into a
+                                        working digital product.</span>
+                                </li>
+                                <li class="ct_ready_build_item">
+                                    <strong class="ct_ff_satoshi_bold text-white">Software Integration:</strong>
+                                    <span class="ct_ff_satoshi_regular text-white opacity-90"> Connect your business
+                                        tools and systems.</span>
+                                </li>
+                            </ul>
+
+                            <p class="ct_ready_build_note ct_ff_satoshi_regular text-white">
+                                Tell us about your app, and our team will connect with you to discuss your
+                                requirements and next steps.
+                            </p>
+
+                            <div class="ct_ready_build_btns d-flex flex-wrap gap-3">
+                                <a href="#contact-form" class="ct_btn_white ct_fs_14 ct_ff_satoshi_bold">
+                                    <span>START YOUR APP PROJECT</span>
+                                </a>
+                                <a href="tel:+917314877050" class="ct_btn_white ct_fs_14 ct_ff_satoshi_bold">
+                                    <span>TALK TO OUR TEAM</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Contact Project Form Card -->
+                    <div class="col-lg-6 col-12">
+                        <div class="ct_contact_card" id="contact-form">
+                            <h3 class="ct_contact_card_title ct_ff_satoshi_bold">
+                                HAVE A PROJECT IN <span class="ct_text_blue">MIND?</span>
+                            </h3>
+                            <p class="ct_contact_card_sub ct_ff_satoshi_regular">
+                                You do not need to have every detail figured out before contacting us.
+                            </p>
+
+                            <form class="ct_contact_form" onsubmit="event.preventDefault();">
+                                <div class="row ">
+                                    <div class="col-sm-6 col-12 ct_mb_36">
+                                        <div class="ct_form_group">
+                                            <label class="ct_form_label ct_ff_satoshi_medium">Name *</label>
+                                            <input type="text" class="ct_form_input ct_ff_satoshi_regular"
+                                                placeholder="Full Name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-12 ct_mb_36">
+                                        <div class="ct_form_group">
+                                            <label class="ct_form_label ct_ff_satoshi_medium">Company Name
+                                                (Optional)</label>
+                                            <input type="text" class="ct_form_input ct_ff_satoshi_regular"
+                                                placeholder="Enter Your Company Name">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-sm-6 col-12 ct_mb_36">
+                                        <div class="ct_form_group">
+                                            <label class="ct_form_label ct_ff_satoshi_medium">Phone Number *</label>
+                                            <input type="tel" class="ct_form_input ct_ff_satoshi_regular"
+                                                placeholder="Enter Your Number" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-12 ct_mb_36">
+                                        <div class="ct_form_group">
+                                            <label class="ct_form_label ct_ff_satoshi_medium">Business Email *</label>
+                                            <input type="email" class="ct_form_input ct_ff_satoshi_regular"
+                                                placeholder="Enter Your Email Address" required>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ct_form_group mb-4">
+                                    <input type="text" class="ct_form_input ct_ff_satoshi_regular"
+                                        placeholder="Describe your App Project">
+                                </div>
+
+                                <div class="ct_form_group ct_file_upload_group mb-4">
+                                    <label class="ct_file_upload_label" for="ctProjectFile">
+                                        <span class="ct_file_placeholder ct_ff_satoshi_regular">Attach PDF/Doc
+                                            File</span>
+                                        <i class="fa-solid fa-arrow-up-from-bracket ct_upload_icon"></i>
+                                        <input type="file" id="ctProjectFile" class="d-none" accept=".pdf,.doc,.docx">
+                                    </label>
+                                </div>
+
+                                <div class="ct_form_notice mb-4">
+                                    <span class="ct_notice_dot"></span>
+                                    <span class="ct_notice_text ct_ff_satoshi_regular">Expect a response from our team
+                                        within 24 hours</span>
+                                </div>
+
+                                <div class="ct_form_btn_wrap text-end">
+                                    <button type="submit" class="ct_btn_discuss ct_fs_14 ct_ff_satoshi_bold">
+                                        <span>SUBMIT</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!-- Footer Upper Row: Logo & 4 Navigation Columns -->
+                <div class="ct_footer_top_row">
+                    <div class="row g-4">
+                        <!-- Column 1: Brand Logo & Mission Statement -->
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="ct_footer_brand_wrap">
+                                <a href="index.html" class="ct_footer_logo">
+                                    <img src="assets/img/logo_white.svg"
+                                        alt="Creative Thoughts Informatics - You Think We Build">
+                                </a>
+                                <p class="ct_footer_tagline ct_ff_satoshi_regular">
+                                    Building software, digital products, and practical AI solutions that help modern
+                                    businesses transform, innovate, and grow.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Column 2: Quick Links Navigation -->
+                        <div class="col-lg-2 col-md-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Quick Links</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="index.html" class="ct_ff_satoshi_regular">Home</a></li>
+                                <li><a href="about-us.html" class="ct_ff_satoshi_regular">About Us</a></li>
+                                <li><a href="web-development.html" class="ct_ff_satoshi_regular">Services</a></li>
+                                <li><a href="case-study.html" class="ct_ff_satoshi_regular">Case Studies</a></li>
+                                <li><a href="our-team.html" class="ct_ff_satoshi_regular">Team</a></li>
+                                <li><a href="blog.html" class="ct_ff_satoshi_regular">Blog</a></li>
+                                <li><a href="#faq" class="ct_ff_satoshi_regular">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: Core Technology Services -->
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Services</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="web-development.html" class="ct_ff_satoshi_regular">Web Development</a>
+                                </li>
+                                <li><a href="mobile-app-development.html" class="ct_ff_satoshi_regular">Mobile App
+                                        Development</a></li>
+                                <li><a href="custom-software.html" class="ct_ff_satoshi_regular">Custom Software</a>
+                                </li>
+                                <li><a href="ai-automation.html" class="ct_ff_satoshi_regular">AI & Automation</a></li>
+                                <li><a href="cloud-devops.html" class="ct_ff_satoshi_regular">Cloud & DevOps</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: Industries Served -->
+                        <div class="col-lg-3 col-md-6 col-12">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Industries</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Healthcare</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Ecommerce</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Education</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">FinTech</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Logistics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Divider Line -->
+                <div class="ct_footer_mid_line"></div>
+
+                <!-- Footer Lower Row: Get In Touch (Left) & Discover AI Badges (Right) -->
+                <div class="ct_footer_bottom_contact_row">
+                    <div class="row align-items-center justify-content-between g-4">
+                        <!-- Left: Get In Touch -->
+                        <div class="col-lg-6 col-12">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold mb-3">Get In Touch</h5>
+                            <ul class="ct_footer_contact_list">
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-location-dot ct_contact_icon"></i>
+                                    <span>Indore, Madhya Pradesh, India</span>
+                                </li>
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-phone ct_contact_icon"></i>
+                                    <a href="tel:+917314877050">+91-731-4877050</a>
+                                </li>
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-envelope ct_contact_icon"></i>
+                                    <a href="mailto:info@creativethoughtsinfo.com">info@creativethoughtsinfo.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right: Discover Creative Thoughts Informatics With AI -->
+                        <div class="col-lg-5 col-12 d-flex flex-column align-items-lg-end align-items-start">
+                            <div class="ct_footer_ai_wrap text-center">
+                                <h5 class="ct_footer_ai_title ct_ff_satoshi_regular">
+                                    Discover Creative Thoughts<br>
+                                    Informatics With AI
+                                </h5>
+                                <div class="ct_footer_ai_badges justify-content-center">
+                                    <!-- OpenAI Badge -->
+                                    <div class="ct_ai_badge_item text-center">
+                                        <a href="javascript:void(0)" class="ct_ai_badge_box" aria-label="OpenAI">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.8956zm16.0993 3.8558L12.5973 8.3829l2.02-1.1638a.0804.0804 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.402-.686zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813v6.7227zm1.1449-2.0722l2.55-1.4727 2.55 1.4727v2.9358l-2.55 1.4727-2.55-1.4727z" />
+                                            </svg>
+                                        </a>
+                                        <span class="ct_ai_badge_label ct_ff_satoshi_regular">Open AI</span>
+                                    </div>
+
+                                    <!-- Gemini Badge -->
+                                    <div class="ct_ai_badge_item text-center">
+                                        <a href="javascript:void(0)" class="ct_ai_badge_box" aria-label="Google Gemini">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
+                                            </svg>
+                                        </a>
+                                        <span class="ct_ai_badge_label ct_ff_satoshi_regular">Gemini</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Copyright Bar -->
+                <div class="ct_footer_bottom_bar">
+                    <div class="row align-items-center justify-content-between g-2">
+                        <div class="col-md-6 col-12 text-md-start text-center">
+                            <p class="ct_copyright_text ct_ff_satoshi_regular">
+                                &copy; 2026 Creative Thoughts Informatics
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-12 text-md-end text-center">
+                            <div class="ct_legal_links ct_ff_satoshi_regular">
+                                <a href="javascript:void(0)">Privacy Policy</a>
+                                <span class="ct_legal_sep">|</span>
+                                <a href="javascript:void(0)">Terms</a>
+                                <span class="ct_legal_sep">|</span>
+                                <a href="javascript:void(0)">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js?v=2.3"></script>
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1399px) {
     .ct_badge_top_right {
-        top: 20px;
+        top: 32px;
         right: -20px;
     }
 
@@ -53,8 +53,8 @@
     }
 
     .ct_badge_top_right {
-        top: 15px;
-        right: -15px;
+        top: 29px;
+        right: -24px;
         min-width: 160px;
         padding: 12px 18px;
     }
@@ -341,8 +341,9 @@
     }
 
     .ct_badge_top_right {
-        top: 15px;
-        right: -10px;
+        top: 32px;
+        right: -20px;
+        padding-block: 16px;
     }
 
     .ct_badge_bottom_left {
@@ -395,6 +396,10 @@
         text-align: center;
         justify-content: center;
         margin-bottom: 35px;
+    }
+
+    .ct_row_reverse_991 {
+        flex-direction: column-reverse;
     }
 
     .ct_turn_business_content {
@@ -831,7 +836,11 @@
     .ct_blog_subtitle,
     .ct_ai_desc,
     .ct_solutions_desc,
-    .ct_ai_desc {
+    .ct_ai_desc,
+    .ct_contact_hero_desc,
+    .ct_fs_20,
+    .ct_cs_card_subtitle,
+    .ct_cs_box_desc {
         font-size: 18px;
         line-height: 24px;
     }
@@ -887,8 +896,8 @@
     }
 
     .ct_badge_top_right {
-        top: 10px;
-        right: -15px;
+        top: 20px;
+        right: -20px;
     }
 
     .ct_badge_bottom_left {
@@ -913,6 +922,7 @@
     /* Technology Built Section */
     .ct_fs_52 {
         font-size: 32px !important;
+        line-height: 38px;
     }
 
     .ct_tech_card_title {
@@ -1330,8 +1340,8 @@
     }
 
     .ct_badge_top_right {
-        top: -3px;
-        right: -4px;
+        top: 20px;
+        right: -25px;
         width: 96px;
     }
 
@@ -1357,6 +1367,7 @@
     /* Technology Built Section */
     .ct_fs_52 {
         font-size: 26px !important;
+        line-height: 32px !important;
     }
 
     .ct_tech_box {

@@ -18,11 +18,11 @@
 }
 
 .ct_hero_container {
-    max-width: 1360px;
+    /* max-width: 1360px;
     width: 100%;
     padding-left: 24px;
     padding-right: 24px;
-    position: relative;
+    position: relative; */
     z-index: 2;
 }
 
@@ -71,14 +71,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #1480C6;
+    background-color: var(--brand-blue);
     color: #ffffff !important;
     font-weight: 700;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     padding: 14px 34px;
     border-radius: 50px;
-    border: 1px solid #1480C6;
+    border: 1px solid var(--brand-blue);
     text-decoration: none;
     overflow: hidden;
     z-index: 1;
@@ -86,7 +86,6 @@
     font-family: 'Satoshi_Bold', sans-serif;
     font-size: 14px;
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 8px 20px rgba(20, 128, 198, 0.28);
 }
 
 .ct_btn_discuss span {
@@ -114,13 +113,13 @@
 }
 
 .ct_btn_discuss:hover {
-    color: #1480C6 !important;
+    color: var(--brand-blue) !important;
     border-color: #ffffff;
     box-shadow: 0 10px 24px rgba(20, 128, 198, 0.35);
 }
 
 .ct_btn_discuss:hover span {
-    color: #1480C6 !important;
+    color: var(--brand-blue) !important;
 }
 
 /* Services Bar Below Button */
@@ -328,7 +327,6 @@
 }
 
 .ct_section_title {
-    line-height: 1.15;
     color: var(--primary-color);
     letter-spacing: -0.5px;
     text-transform: uppercase;
@@ -1331,7 +1329,6 @@
 }
 
 .ct_fits_title {
-    line-height: 1.15;
     letter-spacing: -0.5px;
     color: var(--primary-color);
     text-transform: uppercase;
@@ -1346,7 +1343,7 @@
 .ct_fits_desc {
     font-size: 20px;
     line-height: 24px;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     margin-bottom: 54px;
     max-width: 482px;
 }
@@ -2554,7 +2551,7 @@
    ========================================================================== */
 
 .ct_faq_footer_wrapper {
-    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 276.93%);
+    background: linear-gradient(180deg, #1E7EB8 -39.21%, #FFFFFF 276.93%);
 
     position: relative;
     width: 100%;

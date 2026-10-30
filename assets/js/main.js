@@ -139,42 +139,48 @@ document.addEventListener('DOMContentLoaded', () => {
     const initBrandSlider = () => {
         if (typeof Swiper === 'undefined') return;
 
-        const sliderElement = document.querySelector('.ct_brand_slider');
-        if (!sliderElement) return;
+        const sliderElements = document.querySelectorAll('.ct_brand_slider');
+        if (!sliderElements.length) return;
 
-        if (window.ctBrandSwiper && typeof window.ctBrandSwiper.destroy === 'function') {
-            window.ctBrandSwiper.destroy(true, true);
+        if (window.ctBrandSwipers && Array.isArray(window.ctBrandSwipers)) {
+            window.ctBrandSwipers.forEach(s => s && typeof s.destroy === 'function' && s.destroy(true, true));
         }
+        window.ctBrandSwipers = [];
 
-        window.ctBrandSwiper = new Swiper('.ct_brand_slider', {
-            slidesPerView: 'auto',
-            spaceBetween: 55,
-            loop: true,
-            loopAdditionalSlides: 8,
-            speed: 5000,
-            allowTouchMove: false,
-            observer: true,
-            observeParents: true,
-            resizeObserver: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-            },
-            breakpoints: {
-                320: {
-                    spaceBetween: 30,
-                    speed: 4000,
+        sliderElements.forEach((sliderEl) => {
+            const isReverse = sliderEl.classList.contains('ct_brand_slider_reverse');
+            const swiperInstance = new Swiper(sliderEl, {
+                slidesPerView: 'auto',
+                spaceBetween: 55,
+                loop: true,
+                loopAdditionalSlides: 8,
+                speed: 5000,
+                allowTouchMove: false,
+                observer: true,
+                observeParents: true,
+                resizeObserver: true,
+                autoplay: {
+                    delay: 0,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
+                    reverseDirection: isReverse,
                 },
-                768: {
-                    spaceBetween: 45,
-                    speed: 4500,
-                },
-                1200: {
-                    spaceBetween: 60,
-                    speed: 5000,
+                breakpoints: {
+                    320: {
+                        spaceBetween: 30,
+                        speed: 4000,
+                    },
+                    768: {
+                        spaceBetween: 45,
+                        speed: 4500,
+                    },
+                    1200: {
+                        spaceBetween: 60,
+                        speed: 5000,
+                    }
                 }
-            }
+            });
+            window.ctBrandSwipers.push(swiperInstance);
         });
     };
 
@@ -789,6 +795,80 @@ document.addEventListener('DOMContentLoaded', () => {
 
     initSolutionsSwiper();
 
+    // =========================================================================
+    // Web Solutions Showcase Swiper (Services Page)
+    // =========================================================================
+    const initWebSolutionsSwiper = () => {
+        const swiperContainer = document.querySelector('.ct_web_solutions_swiper');
+        if (!swiperContainer) return;
+
+        const webSolutionsSwiper = new Swiper('.ct_web_solutions_swiper', {
+            slidesPerView: 1.15,
+            spaceBetween: 24,
+            speed: 500,
+            grabCursor: true,
+            loop: false,
+            navigation: {
+                nextEl: '.ct_solution_next',
+                prevEl: '.ct_solution_prev',
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 1.6,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.2,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 2.8,
+                    spaceBetween: 20,
+                },
+                1200: {
+                    slidesPerView: 3.25,
+                    spaceBetween: 20,
+                },
+                1400: {
+                    slidesPerView: 3.3,
+                    spaceBetween: 20,
+                }
+            },
+            on: {
+                init: function () {
+                    const prevBtn = document.querySelector('.ct_solution_prev');
+                    const nextBtn = document.querySelector('.ct_solution_next');
+                    if (prevBtn && nextBtn) {
+                        if (this.isBeginning) {
+                            prevBtn.classList.remove('active');
+                            nextBtn.classList.add('active');
+                        }
+                    }
+                },
+                slideChange: function () {
+                    const prevBtn = document.querySelector('.ct_solution_prev');
+                    const nextBtn = document.querySelector('.ct_solution_next');
+                    if (prevBtn && nextBtn) {
+                        if (this.isBeginning) {
+                            prevBtn.classList.remove('active');
+                            nextBtn.classList.add('active');
+                        } else if (this.isEnd) {
+                            prevBtn.classList.add('active');
+                            nextBtn.classList.remove('active');
+                        } else {
+                            nextBtn.classList.add('active');
+                            prevBtn.classList.remove('active');
+                        }
+                    }
+                }
+            }
+        });
+
+        window.ctWebSolutionsSwiper = webSolutionsSwiper;
+    };
+
+    initWebSolutionsSwiper();
+
     // Global debounced resize handler: ensures Swiper, Stacking Cards, and ScrollTrigger update reliably
     let globalResizeTimer = null;
     window.addEventListener('resize', () => {
@@ -812,6 +892,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.ctSolutionsSwiper.autoplay && !window.ctSolutionsSwiper.autoplay.running) {
                     window.ctSolutionsSwiper.autoplay.start();
                 }
+            }
+            if (window.ctWebSolutionsSwiper && typeof window.ctWebSolutionsSwiper.update === 'function') {
+                window.ctWebSolutionsSwiper.update();
             }
         }, 150);
     });
@@ -847,6 +930,102 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // 12. Approach Section Timeline Scroll Progress Animation
+    const initApproachTimeline = () => {
+        const timelineWrap = document.querySelector('.ct_cs_timeline_wrap');
+        const timelineTrack = document.querySelector('.ct_cs_timeline_track');
+        const fillLine = document.getElementById('ctTimelineFill');
+        const stepRows = document.querySelectorAll('.ct_cs_step_row');
+        if (!timelineWrap || !timelineTrack || !fillLine || !stepRows.length) return;
+
+        const dots = Array.from(stepRows).map((row) => row.querySelector('.ct_cs_step_dot'));
+        let isTicking = false;
+
+        // Ensure track line starts precisely at dot 1 center and ends at dot 5 center
+        const syncTrackBounds = () => {
+            const firstDot = dots[0];
+            const lastDot = dots[dots.length - 1];
+            if (!firstDot || !lastDot) return;
+
+            const wrapRect = timelineWrap.getBoundingClientRect();
+            const firstDotRect = firstDot.getBoundingClientRect();
+            const lastDotRect = lastDot.getBoundingClientRect();
+
+            const topOffset = (firstDotRect.top + firstDotRect.height / 2) - wrapRect.top;
+            const bottomOffset = wrapRect.bottom - (lastDotRect.top + lastDotRect.height / 2);
+
+            timelineTrack.style.top = `${Math.round(topOffset)}px`;
+            timelineTrack.style.bottom = `${Math.round(bottomOffset)}px`;
+        };
+
+        const updateTimeline = () => {
+            const windowHeight = window.innerHeight;
+            // Target trigger point: 60% from top of viewport
+            const triggerPoint = windowHeight * 0.60;
+
+            const firstDot = dots[0];
+            const lastDot = dots[dots.length - 1];
+            if (!firstDot || !lastDot) return;
+
+            const firstDotRect = firstDot.getBoundingClientRect();
+            const lastDotRect = lastDot.getBoundingClientRect();
+
+            const startY = firstDotRect.top + (firstDotRect.height / 2);
+            const endY = lastDotRect.top + (lastDotRect.height / 2);
+            const totalDistance = endY - startY;
+
+            if (totalDistance <= 0) return;
+
+            // Calculate progress between first dot and last dot
+            let progress = (triggerPoint - startY) / totalDistance;
+            progress = Math.max(0, Math.min(1, progress));
+
+            // Set fill line height
+            fillLine.style.height = `${(progress * 100).toFixed(2)}%`;
+
+            // Activate dots and rows
+            dots.forEach((dot, index) => {
+                if (!dot) return;
+                const dotCenter = dot.getBoundingClientRect().top + (dot.getBoundingClientRect().height / 2);
+
+                // Step 01 is active once section enters view, or if dot has passed trigger
+                const shouldActivate = (dotCenter <= triggerPoint) || (index === 0 && startY <= windowHeight * 0.85);
+
+                if (shouldActivate) {
+                    dot.classList.add('active');
+                    stepRows[index]?.classList.add('active');
+                } else if (index > 0) {
+                    dot.classList.remove('active');
+                    stepRows[index]?.classList.remove('active');
+                }
+            });
+        };
+
+        const onResizeOrLayout = () => {
+            syncTrackBounds();
+            updateTimeline();
+        };
+
+        window.addEventListener('scroll', () => {
+            if (!isTicking) {
+                window.requestAnimationFrame(() => {
+                    updateTimeline();
+                    isTicking = false;
+                });
+                isTicking = true;
+            }
+        }, { passive: true });
+
+        window.addEventListener('resize', onResizeOrLayout, { passive: true });
+        window.addEventListener('load', onResizeOrLayout, { passive: true });
+
+        // Initial setup
+        syncTrackBounds();
+        updateTimeline();
+    };
+
+    initApproachTimeline();
 });
 
 

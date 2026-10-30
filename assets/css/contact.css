@@ -6,9 +6,10 @@
    1. Contact Hero / "Tell Us About Your Project" Section
    -------------------------------------------------------------------------- */
 .ct_contact_hero_section {
-    background-color: var(--brand-blue);
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 268.26%);
+
     color: #ffffff;
-    padding: 70px 0 80px 0;
+    padding: 79px 0;
     position: relative;
 }
 
@@ -22,7 +23,7 @@
 }
 
 .ct_contact_hero_desc {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.92);
     margin-bottom: 28px;
@@ -32,16 +33,15 @@
 /* 3 Process Cards Row */
 .ct_process_cards_row {
     display: flex;
-    gap: 16px;
+    gap: 5px;
     margin-bottom: 36px;
 }
 
 .ct_process_card {
     flex: 1 1 0;
     background: #ffffff;
-    border-radius: 26px;
-    padding: 28px 22px 30px 22px;
-    min-height: 295px;
+    border-radius: 16px;
+    padding: 30px 10px 10px;
     display: flex;
     flex-direction: column;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -54,7 +54,7 @@
 }
 
 .ct_process_num {
-    font-size: 54px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--brand-blue);
     line-height: 1;
@@ -64,15 +64,15 @@
 }
 
 .ct_process_title {
-    font-size: 17.5px;
+    font-size: 14px;
     line-height: 1.32;
     color: #111111;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
     font-weight: 700;
 }
 
 .ct_process_desc {
-    font-size: 13.5px;
+    font-size: 12px;
     line-height: 1.55;
     color: #333333;
     margin-bottom: 0;
@@ -93,19 +93,19 @@
     align-items: center;
     gap: 14px;
     color: #ffffff;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .ct_contact_info_icon {
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 1);
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
-    color: #ffffff;
+    color: var(--brand-blue);
     flex-shrink: 0;
 }
 
@@ -128,11 +128,6 @@
 /* --------------------------------------------------------------------------
    2. Light-Themed FAQ Section (Centered with White Background)
    -------------------------------------------------------------------------- */
-.ct_faq_section.ct_faq_light {
-    background: #ffffff;
-    color: var(--primary-color);
-    padding: 85px 0 70px 0;
-}
 
 .ct_faq_light .ct_faq_head {
     margin-bottom: 50px;
@@ -155,7 +150,7 @@
 
 .ct_faq_light .ct_faq_question {
     color: var(--primary-color);
-    font-size: 16px;
+    font-size: 24px;
     padding: 20px 0;
     font-weight: 500;
 }
@@ -172,7 +167,7 @@
 
 .ct_faq_light .ct_faq_answer p {
     color: var(--secondary-color);
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.6;
 }
 
@@ -200,15 +195,15 @@
     display: block;
 }
 
+.ct_faq_section.ct_faq_light {
+    padding: 120px 0;
+}
+
 /* --------------------------------------------------------------------------
    4. Responsive Adjustments for Contact Page
    -------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
-    .ct_process_card {
-        padding: 24px 18px 26px 18px;
-        border-radius: 22px;
-        min-height: auto;
-    }
+
 
     .ct_process_num {
         font-size: 46px;
@@ -234,15 +229,8 @@
         font-size: 32px;
     }
 
-    .ct_process_cards_row {
-        gap: 12px;
-        margin-bottom: 30px;
-    }
 
-    .ct_process_card {
-        padding: 22px 16px 24px 16px;
-        border-radius: 20px;
-    }
+
 
     .ct_process_num {
         font-size: 40px;
@@ -258,9 +246,6 @@
         font-size: 12.5px;
     }
 
-    .ct_faq_section.ct_faq_light {
-        padding: 60px 0 50px 0;
-    }
 
     .ct_faq_light .ct_faq_title {
         font-size: 30px;
@@ -278,11 +263,6 @@
         gap: 14px;
     }
 
-    .ct_process_card {
-        padding: 24px 20px;
-        border-radius: 22px;
-        min-height: auto;
-    }
 
     .ct_process_num {
         font-size: 48px;
@@ -302,9 +282,7 @@
         font-size: 28px;
     }
 
-    .ct_contact_hero_desc {
-        font-size: 14.5px;
-    }
+
 
     .ct_map_wrapper {
         height: 300px;
@@ -325,18 +303,13 @@
         align-items: flex-start;
     }
 
-    .ct_faq_section.ct_faq_light {
-        padding: 45px 0 40px 0;
-    }
+
 
     .ct_faq_light .ct_faq_title {
         font-size: 24px;
     }
 
-    .ct_faq_light .ct_faq_question {
-        font-size: 14.5px;
-        padding: 16px 0;
-    }
+
 
     .ct_map_wrapper {
         height: 260px;

@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights - Creative Thoughts Informatics</title>
+    <meta name="description"
+        content="Explore the latest insights on AI, software development, web and mobile apps, SaaS, ecommerce, and business automation. Discover practical tips, industry trends, and technology solutions to grow your business.">
+
+    <!-- Google Fonts (Plus Jakarta Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Font Awesome 6 Free Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/common.css?v=2.1">
+    <link rel="stylesheet" href="assets/css/header.css?v=2.1">
+    <link rel="stylesheet" href="assets/css/style.css?v=2.6">
+    <link rel="stylesheet" href="assets/css/blog.css?v=1.1">
+    <link rel="stylesheet" href="assets/css/footer.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/responsive.css?v=2.6">
+</head>
+
+<body>
+
+    <!-- =========================================================================
+         Header Section (Sticky on scroll, right-side slide menu on <= 1199px)
+         ========================================================================= -->
+    <header class="ct_header">
+        <div class="container">
+            <div class="ct_header_inner">
+                <!-- Brand Logo (Left) -->
+                <div class="ct_header_left">
+                    <a href="index.html" class="ct_header_logo">
+                        <img src="assets/img/logo_black.svg" alt="Creative Thoughts Informatics - You Think We Build">
+                    </a>
+                </div>
+
+                <!-- Navigation Menu (Centered on Desktop, Slide Drawer on <=1199px) -->
+                <nav class="ct_nav_menu" id="ctNavMenu">
+                    <!-- Drawer Header (visible on mobile drawer <=1199px) -->
+                    <div class="ct_drawer_header">
+                        <a href="index.html" class="ct_drawer_logo">
+                            <img src="assets/img/logo_black.svg" alt="Creative Thoughts Informatics">
+                        </a>
+                        <button type="button" class="ct_drawer_close" aria-label="Close menu">&times;</button>
+                    </div>
+
+                    <!-- Navigation Links -->
+                    <ul class="ct_nav_list">
+                        <li class="ct_nav_item"><a href="index.html" class="ct_nav_link ct_fs_14">HOME</a></li>
+                        <li class="ct_nav_item"><a href="index.html#services" class="ct_nav_link ct_fs_14">SERVICES</a>
+                        </li>
+                        <li class="ct_nav_item"><a href="index.html#industries"
+                                class="ct_nav_link ct_fs_14">INDUSTRIES</a></li>
+                        <li class="ct_nav_item"><a href="index.html#solutions"
+                                class="ct_nav_link ct_fs_14">SOLUTIONS</a></li>
+                        <li class="ct_nav_item"><a href="case-study.html" class="ct_nav_link ct_fs_14">CASE-STUDIES</a>
+                        </li>
+                        <li class="ct_nav_item"><a href="about-us.html" class="ct_nav_link ct_fs_14">ABOUT</a></li>
+                        <li class="ct_nav_item"><a href="index.html#team" class="ct_nav_link ct_fs_14">TEAM</a></li>
+                        <li class="ct_nav_item"><a href="blog.html" class="ct_nav_link ct_fs_14">BLOG</a></li>
+                    </ul>
+
+                    <!-- Drawer Contact Button (visible only in mobile drawer) -->
+                    <div class="ct_drawer_btn_wrap">
+                        <a href="contact-us.html" class="ct_header_btn ct_fs_14"><span>Contact</span></a>
+                    </div>
+                </nav>
+
+                <!-- Header Right Action (Contact Button & Hamburger Toggle) -->
+                <div class="ct_header_right">
+                    <a href="contact-us.html" class="ct_header_btn ct_fs_14"><span>Contact</span></a>
+                    <button type="button" class="ct_menu_toggle" aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+
+                <!-- Mobile Backdrop Overlay -->
+                <div class="ct_nav_backdrop"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         Blog Hero Section with Swiper Infinite Loop Slider
+         ========================================================================= -->
+    <section class="ct_blog_hero_section">
+        <div class="container">
+            <div class="ct_blog_hero_head text-center">
+                <h1 class="ct_blog_hero_title ct_ff_satoshi_bold ct_fs_52">
+                    INSIGHTS, IDEAS &<br>
+                    TECHNOLOGY THAT MATTER
+                </h1>
+                <p class="ct_blog_hero_desc ct_ff_satoshi_regular ct_fs_20">
+                    Explore the latest insights on AI, software development, web and mobile apps, SaaS,
+                    ecommerce, and business automation. Discover practical tips, industry trends, and
+                    technology solutions to grow your business.
+                </p>
+            </div>
+        </div>
+
+        <!-- Horizontal Swiper Image Slider -->
+        <div class="ct_blog_slider_wrapper">
+            <div class="swiper ct_blog_hero_swiper">
+                <div class="swiper-wrapper">
+                    <!-- Set 1 -->
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_1.webp"
+                                alt="Insights on AI, Technology and Software Development" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_2.webp"
+                                alt="Modern Design, Planning and Digital Strategy" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_3.webp"
+                                alt="Team Collaboration, Technology and Innovation" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_4.webp"
+                                alt="Product Engineering, SaaS and Cloud Solutions" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_5.webp" alt="Digital Workspace, Automation and Growth"
+                                class="ct_blog_slide_img">
+                        </div>
+                    </div>
+
+                    <!-- Set 2 -->
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_1.webp"
+                                alt="Insights on AI, Technology and Software Development" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_2.webp"
+                                alt="Modern Design, Planning and Digital Strategy" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_3.webp"
+                                alt="Team Collaboration, Technology and Innovation" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_4.webp"
+                                alt="Product Engineering, SaaS and Cloud Solutions" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_5.webp" alt="Digital Workspace, Automation and Growth"
+                                class="ct_blog_slide_img">
+                        </div>
+                    </div>
+
+                    <!-- Set 3 -->
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_1.webp"
+                                alt="Insights on AI, Technology and Software Development" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_2.webp"
+                                alt="Modern Design, Planning and Digital Strategy" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_3.webp"
+                                alt="Team Collaboration, Technology and Innovation" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_4.webp"
+                                alt="Product Engineering, SaaS and Cloud Solutions" class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide ct_blog_slide">
+                        <div class="ct_blog_slide_card">
+                            <img src="assets/img/Blog/blog_img_5.webp" alt="Digital Workspace, Automation and Growth"
+                                class="ct_blog_slide_img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Blog Posts Section (Featured Article + 3x3 Cards Grid)
+         ========================================================================== -->
+    <section class="ct_blog_section ct_py_120">
+        <div class="container">
+            <!-- Top Featured Post -->
+            <div class="row align-items-center g-4 g-lg-5 ct_mb_64">
+                <div class="col-lg-6 col-12">
+                    <div class="ct_blog_img_wrap" style="border-radius: 18px; aspect-ratio: 16 / 10;">
+                        <img src="assets/img/dummy_img.png" alt="How Much Does It Cost to Build a Mobile App?"
+                            class="ct_blog_img">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="ct_blog_content p-0">
+                        <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                        <h2 class="ct_ff_satoshi_bold ct_fs_38 mb-3">
+                            <a href="javascript:void(0)" class="ct_text_primary text-decoration-none">How Much Does It
+                                Cost to Build a Mobile App?</a>
+                        </h2>
+                        <p class="ct_blog_subtitle ct_ff_satoshi_regular mb-4">
+                            Discover the key factors that influence mobile app development costs, from features and
+                            platform selection to design, development, and ongoing maintenance.
+                        </p>
+                        <div class="d-flex align-items-center justify-content-between pt-2">
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-0">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Cards 3x3 Grid (9 Cards) -->
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How Much Does It Cost to Build a Mobile App?"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How Much Does It Cost to Build a Mobile App?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How AI Is Changing Software Development"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How AI Is Changing Software Development</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png"
+                                alt="Custom Software vs Off-the-Shelf Software: Which Is Better?" class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">Custom Software vs Off-the-Shelf Software: Which Is
+                                    Better?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How Much Does It Cost to Build a Mobile App?"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How Much Does It Cost to Build a Mobile App?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How AI Is Changing Software Development"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How AI Is Changing Software Development</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png"
+                                alt="Custom Software vs Off-the-Shelf Software: Which Is Better?" class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">Custom Software vs Off-the-Shelf Software: Which Is
+                                    Better?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How Much Does It Cost to Build a Mobile App?"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How Much Does It Cost to Build a Mobile App?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png" alt="How AI Is Changing Software Development"
+                                class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">How AI Is Changing Software Development</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="ct_blog_card">
+                        <div class="ct_blog_img_wrap">
+                            <img src="assets/img/dummy_img.png"
+                                alt="Custom Software vs Off-the-Shelf Software: Which Is Better?" class="ct_blog_img">
+                        </div>
+                        <div class="ct_blog_content">
+                            <span class="ct_blog_category ct_ff_satoshi_bold">NEWS</span>
+                            <h3 class="ct_blog_card_title ct_ff_satoshi_bold">
+                                <a href="javascript:void(0)">Custom Software vs Off-the-Shelf Software: Which Is
+                                    Better?</a>
+                            </h3>
+                            <span class="ct_blog_date ct_ff_satoshi_regular mb-2">April 29, 2026</span>
+                            <a href="javascript:void(0)"
+                                class="ct_text_blue ct_ff_satoshi_medium ct_fs_14 text-decoration-none">Read Article
+                                &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================================================
+         Footer Section (from contact page)
+         ========================================================================== -->
+    <div class="ct_faq_footer_wrapper">
+        <footer class="ct_footer_section" id="footer">
+            <div class="container">
+                <!-- Footer Top Row: Brand Info (Left) & Social Media (Right) -->
+                <div class="ct_footer_top_row">
+                    <div class="row align-items-start justify-content-between g-4">
+                        <!-- Brand info -->
+                        <div class="col-lg-6 col-12">
+                            <a href="index.html" class="ct_footer_logo_wrap">
+                                <img src="assets/img/logo_white.svg" alt="Creative Thoughts Informatics"
+                                    class="ct_footer_logo">
+                            </a>
+                            <p class="ct_footer_tagline ct_ff_satoshi_regular">
+                                We build digital products, software, and AI solutions that help businesses grow.
+                            </p>
+                        </div>
+
+                        <!-- Social Media -->
+                        <div class="col-lg-auto col-12">
+                            <div class="ct_footer_social_block">
+                                <h4 class="ct_footer_social_title ct_ff_satoshi_bold">Social Media</h4>
+                                <p class="ct_footer_social_sub ct_ff_satoshi_regular">
+                                    Don't Miss To Follow Us On Our Social Networks Accounts.
+                                </p>
+                                <div class="ct_footer_social_links">
+                                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"
+                                        class="ct_social_icon_btn" aria-label="Facebook">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"
+                                        class="ct_social_icon_btn" aria-label="LinkedIn">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"
+                                        class="ct_social_icon_btn" aria-label="Instagram">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </a>
+                                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer"
+                                        class="ct_social_icon_btn" aria-label="YouTube">
+                                        <i class="fa-brands fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Top Horizontal Divider Line below Top Row -->
+                <div class="ct_footer_top_line"></div>
+
+                <!-- Footer Main Links Grid (4 Columns) -->
+                <div class="ct_footer_links_grid">
+                    <div class="row g-4">
+                        <!-- Column 1: Company -->
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Company</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="about-us.html" class="ct_ff_satoshi_regular">About Us</a></li>
+                                <li><a href="index.html#solutions" class="ct_ff_satoshi_regular">Our Work</a></li>
+                                <li><a href="contact-us.html" class="ct_ff_satoshi_regular">Contact Us</a></li>
+                                <li><a href="index.html#services" class="ct_ff_satoshi_regular">Services</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 2: Services -->
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Services</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="web-development.html" class="ct_ff_satoshi_regular">Web Development</a>
+                                </li>
+                                <li><a href="mobile-app-development.html" class="ct_ff_satoshi_regular">Mobile App
+                                        Development</a></li>
+                                <li><a href="custom-software.html" class="ct_ff_satoshi_regular">Custom Software</a>
+                                </li>
+                                <li><a href="ai-development.html" class="ct_ff_satoshi_regular">AI Development</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 3: Resources -->
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Resources</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="blog.html" class="ct_ff_satoshi_regular">Blog</a></li>
+                                <li><a href="case-study.html" class="ct_ff_satoshi_regular">Case Studies</a></li>
+                                <li><a href="#faq" class="ct_ff_satoshi_regular">FAQs</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Column 4: Industries -->
+                        <div class="col-lg-3 col-sm-6 col-6">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold">Industries</h5>
+                            <ul class="ct_footer_nav_list">
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Healthcare</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Ecommerce</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Education</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">FinTech</a></li>
+                                <li><a href="index.html#industries" class="ct_ff_satoshi_regular">Logistics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Middle Divider Line -->
+                <div class="ct_footer_mid_line"></div>
+
+                <!-- Footer Lower Row: Get In Touch (Left) & Discover AI Badges (Right) -->
+                <div class="ct_footer_bottom_contact_row">
+                    <div class="row align-items-center justify-content-between g-4">
+                        <!-- Left: Get In Touch -->
+                        <div class="col-lg-6 col-12">
+                            <h5 class="ct_footer_col_title ct_ff_satoshi_bold mb-3">Get In Touch</h5>
+                            <ul class="ct_footer_contact_list">
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-location-dot ct_contact_icon"></i>
+                                    <span>Indore, Madhya Pradesh, India</span>
+                                </li>
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-phone ct_contact_icon"></i>
+                                    <a href="tel:+917314877050">+91-731-4877050</a>
+                                </li>
+                                <li class="ct_ff_satoshi_regular">
+                                    <i class="fa-solid fa-envelope ct_contact_icon"></i>
+                                    <a href="mailto:info@creativethoughtsinfo.com">info@creativethoughtsinfo.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Right: Discover Creative Thoughts Informatics With AI -->
+                        <div class="col-lg-5 col-12 d-flex flex-column align-items-lg-end align-items-start">
+                            <div class="ct_footer_ai_wrap text-center">
+                                <h5 class="ct_footer_ai_title ct_ff_satoshi_regular">
+                                    Discover Creative Thoughts<br>
+                                    Informatics With AI
+                                </h5>
+                                <div class="ct_footer_ai_badges justify-content-center">
+                                    <!-- OpenAI Badge -->
+                                    <div class="ct_ai_badge_item text-center">
+                                        <a href="javascript:void(0)" class="ct_ai_badge_box" aria-label="OpenAI">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M22.2819 9.8211a5.9847 5.9847 0 0 0-.5157-4.9108 6.0462 6.0462 0 0 0-6.5098-2.9A6.0651 6.0651 0 0 0 4.9807 4.1818a5.9847 5.9847 0 0 0-3.9977 2.9 6.0462 6.0462 0 0 0 .7427 7.0966 5.98 5.98 0 0 0 .511 4.9107 6.051 6.051 0 0 0 6.5146 2.9001A5.9847 5.9847 0 0 0 13.2599 24a6.0557 6.0557 0 0 0 5.7718-4.2058 5.9894 5.9894 0 0 0 3.9977-2.9001 6.0557 6.0557 0 0 0-.7475-7.0729zm-9.022 12.6081a4.4755 4.4755 0 0 1-2.8764-1.0408l.1419-.0804 4.7783-2.7582a.7948.7948 0 0 0 .3927-.6813v-6.7369l2.02 1.1686a.071.071 0 0 1 .038.052v5.5826a4.504 4.504 0 0 1-4.4945 4.4944zm-9.6607-4.1254a4.4708 4.4708 0 0 1-.5346-3.0137l.142.0852 4.783 2.7582a.7712.7712 0 0 0 .7806 0l5.8428-3.3685v2.3324a.0804.0804 0 0 1-.0332.0615L9.74 19.9502a4.4992 4.4992 0 0 1-6.1408-1.6464zM2.3408 7.8956a4.485 4.485 0 0 1 2.3655-1.9728V11.6a.7664.7664 0 0 0 .3879.6765l5.8144 3.3543-2.0201 1.1685a.0757.0757 0 0 1-.071 0l-4.8303-2.7865A4.504 4.504 0 0 1 2.3408 7.8956zm16.0993 3.8558L12.5973 8.3829l2.02-1.1638a.0804.0804 0 0 1 .071 0l4.8303 2.7913a4.4944 4.4944 0 0 1-.6765 8.1042v-5.6772a.79.79 0 0 0-.402-.686zm2.0107-3.0231l-.142-.0852-4.7735-2.7818a.7759.7759 0 0 0-.7854 0L9.409 9.2297V6.8974a.0662.0662 0 0 1 .0284-.0615l4.8303-2.7866a4.4992 4.4992 0 0 1 6.6802 4.66zM8.3065 12.863l-2.02-1.1638a.0804.0804 0 0 1-.038-.0567V6.0742a4.4992 4.4992 0 0 1 7.3757-3.4537l-.142.0805L8.704 5.459a.7948.7948 0 0 0-.3927.6813v6.7227zm1.1449-2.0722l2.55-1.4727 2.55 1.4727v2.9358l-2.55 1.4727-2.55-1.4727z" />
+                                            </svg>
+                                        </a>
+                                        <span class="ct_ai_badge_label ct_ff_satoshi_regular">Open AI</span>
+                                    </div>
+
+                                    <!-- Gemini Badge -->
+                                    <div class="ct_ai_badge_item text-center">
+                                        <a href="javascript:void(0)" class="ct_ai_badge_box" aria-label="Google Gemini">
+                                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                                <path
+                                                    d="M12 0C12 6.627 6.627 12 0 12C6.627 12 12 17.373 12 24C12 17.373 17.373 12 24 12C17.373 12 12 6.627 12 0Z" />
+                                            </svg>
+                                        </a>
+                                        <span class="ct_ai_badge_label ct_ff_satoshi_regular">Gemini</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Copyright Bar -->
+                <div class="ct_footer_bottom_bar">
+                    <div class="row align-items-center justify-content-between g-2">
+                        <div class="col-md-6 col-12 text-md-start text-center">
+                            <p class="ct_copyright_text ct_ff_satoshi_regular">
+                                &copy; 2026 Creative Thoughts Informatics
+                            </p>
+                        </div>
+                        <div class="col-md-6 col-12 text-md-end text-center">
+                            <div class="ct_legal_links ct_ff_satoshi_regular">
+                                <a href="javascript:void(0)">Privacy Policy</a>
+                                <span class="ct_legal_sep">|</span>
+                                <a href="javascript:void(0)">Terms</a>
+                                <span class="ct_legal_sep">|</span>
+                                <a href="javascript:void(0)">Sitemap</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- GSAP & ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <!-- Main JS -->
+    <script src="assets/js/main.js?v=2.2"></script>
+
+    <!-- Blog Swiper Slider Script (Loop & Centered Active Slide) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const blogSwiper = new Swiper('.ct_blog_hero_swiper', {
+                loop: true,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                spaceBetween: 24,
+                initialSlide: 7,
+                slideToClickedSlide: true,
+                speed: 650,
+                grabCursor: true,
+                autoplay: {
+                    delay: 3200,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                },
+                keyboard: {
+                    enabled: true,
+                    onlyInViewport: true,
+                },
+                breakpoints: {
+                    320: {
+                        spaceBetween: 14,
+                    },
+                    768: {
+                        spaceBetween: 18,
+                    },
+                    992: {
+                        spaceBetween: 24,
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

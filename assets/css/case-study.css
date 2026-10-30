@@ -1,0 +1,758 @@
+/* ==========================================================================
+   Case Study Page Styles (case-study.css)
+   Creative Thoughts Informatics
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Case Study Hero Section
+   -------------------------------------------------------------------------- */
+.ct_cs_hero_section {
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 268.26%);
+    padding: 100px 0 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ct_cs_hero_title {
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 24px;
+}
+
+.ct_cs_hero_desc {
+    max-width: 862px;
+    margin-bottom: 32px;
+}
+
+/* --------------------------------------------------------------------------
+   2. Brand Slider Section Override for Case Study
+   -------------------------------------------------------------------------- */
+.ct_cs_brand_section {
+    padding: 60px 0 60px;
+}
+
+.ct_cs_brand_title {
+    line-height: 1.25;
+}
+
+.ct_brand_slider_2 {
+    margin-top: 37px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Featured Case Studies Section (4 Hero Cards)
+   -------------------------------------------------------------------------- */
+
+.ct_cs_card {
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 36px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    position: relative;
+}
+
+.ct_cs_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.ct_cs_card_inner {
+    padding: 48px 56px 44px;
+}
+
+/* Card 1: Carzone */
+.ct_cs_card_carzone {
+    background: linear-gradient(180deg, #161616 -59.7%, #8F0C1F 171.84%);
+}
+
+/* Card 2: Life's Moment */
+.ct_cs_card_lifemoment {
+    background: linear-gradient(180deg, #FFFFFF -113.1%, #87E37F 125.93%);
+}
+
+/* Card 3: Trophy Talk */
+.ct_cs_card_trophytalk {
+    background: #F0F0F0;
+}
+
+/* Card 4: MarineOps */
+.ct_cs_card_marineops {
+    background: linear-gradient(180deg, #0A416C 0%, #FFFFFF 295.72%);
+}
+
+/* Card Elements */
+.ct_cs_card_logo {
+    height: 32px;
+    width: auto;
+    max-width: 190px;
+    object-fit: contain;
+    margin-bottom: 24px;
+    display: inline-block;
+}
+
+.ct_cs_card_title {
+    font-size: 48px;
+    letter-spacing: 0.5px;
+    margin-bottom: 14px;
+    line-height: 1.15;
+}
+
+.ct_cs_card_subtitle {
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 10px;
+}
+
+.ct_cs_card_desc {
+    font-size: 14px;
+    line-height: 1.55;
+    margin-bottom: 22px;
+    max-width: 500px;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.ct_cs_card_trophytalk .ct_cs_card_desc,
+.ct_cs_card_lifemoment .ct_cs_card_desc {
+    color: rgba(18, 18, 18, 0.75);
+}
+
+/* Card Metadata (Service & Project Type) */
+.ct_cs_card_meta {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ct_cs_meta_item {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.ct_cs_meta_label {
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+.ct_cs_meta_val {
+    font-family: 'Satoshi_regular', sans-serif;
+}
+
+.ct_cs_card_btn_wrap {
+    margin-top: 2px;
+}
+
+/* Bright green text for Life's Moment title */
+.ct_text_bright_green {
+    color: #28C72B !important;
+}
+
+/* Gray Pill Button for Trophy Talk */
+.ct_btn_gray_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    background-color: #D9DDE2;
+    color: var(--brand-blue) !important;
+    border-radius: 50px;
+    border: 1px solid #D9DDE2;
+    text-decoration: none;
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.ct_btn_gray_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_btn_gray_pill::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--brand-blue);
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_btn_gray_pill:hover::before {
+    width: 100%;
+}
+
+.ct_btn_gray_pill:hover {
+    color: #ffffff !important;
+    border-color: var(--brand-blue);
+    box-shadow: 0 8px 20px rgba(20, 128, 198, 0.25);
+}
+
+.ct_btn_gray_pill:hover span {
+    color: #ffffff !important;
+}
+
+.ct_cs_card_img_wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: -44px;
+}
+
+.ct_cs_card_carzone .ct_cs_card_img_wrap,
+.ct_cs_card_trophytalk .ct_cs_card_img_wrap {
+    justify-content: flex-end;
+    margin-right: -56px;
+}
+
+.ct_cs_card_lifemoment .ct_cs_card_img_wrap,
+.ct_cs_card_marineops .ct_cs_card_img_wrap {
+    justify-content: flex-start;
+    margin-left: -56px;
+}
+
+.ct_cs_card_img {
+    max-height: 480px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    vertical-align: bottom;
+    display: block;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+    transition: transform 0.4s ease;
+}
+
+.ct_cs_card:hover .ct_cs_card_img {
+    transform: scale(1.02);
+}
+
+/* Green Theme Button for Life's Moment */
+.ct_btn_green_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 34px;
+    background-color: #ffffff;
+    color: #00873E !important;
+    border-radius: 50px;
+    border: 1px solid #ffffff;
+    text-decoration: none;
+    font-family: 'Satoshi_Bold', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.ct_btn_green_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_btn_green_pill::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #00873E;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_btn_green_pill:hover::before {
+    width: 100%;
+}
+
+.ct_btn_green_pill:hover {
+    color: #ffffff !important;
+    border-color: #00873E;
+    box-shadow: 0 10px 24px rgba(0, 135, 62, 0.3);
+}
+
+.ct_btn_green_pill:hover span {
+    color: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   4. How We Approach Every Project (5-Step Timeline)
+   -------------------------------------------------------------------------- */
+.ct_cs_approach_section {
+    padding: 100px 0 120px;
+    position: relative;
+}
+
+.ct_cs_approach_desc {
+    max-width: 620px;
+    margin: 16px auto 0;
+    line-height: 1.6;
+    color: #4A4A4A;
+}
+
+.ct_cs_timeline_wrap {
+    position: relative;
+}
+
+/* Vertical Track (Grey) and Fill (Blue) Line */
+.ct_cs_timeline_track {
+    position: absolute;
+    top: 87px;
+    bottom: 87px;
+    left: 50%;
+    width: 2px;
+    background-color: #6F7070;
+    transform: translateX(-50%);
+    z-index: 1;
+    border-radius: 2px;
+}
+
+.ct_cs_timeline_fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--brand-blue);
+    border-radius: 2px;
+    will-change: height;
+}
+
+.ct_cs_step_row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 80px 0;
+    z-index: 2;
+}
+
+/* Fade only the left & right content for inactive steps, keeping dots 100% opaque */
+.ct_cs_step_row .ct_cs_step_left,
+.ct_cs_step_row .ct_cs_step_right {
+    transition: opacity 0.35s ease;
+}
+
+.ct_cs_step_row:not(.active) .ct_cs_step_left,
+.ct_cs_step_row:not(.active) .ct_cs_step_right {
+    opacity: 0.45;
+}
+
+.ct_cs_step_row.active .ct_cs_step_left,
+.ct_cs_step_row.active .ct_cs_step_right {
+    opacity: 1;
+}
+
+.ct_cs_step_left {
+    flex: 1 1 0;
+    width: 50%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+
+.ct_cs_step_num {
+    font-size: 106px;
+    line-height: 1;
+    color: var(--brand-blue);
+    font-family: 'Satoshi_Bold', sans-serif;
+    margin-right: 18px;
+    letter-spacing: -1px;
+    flex-shrink: 0;
+}
+
+.ct_cs_step_title {
+    font-size: 38px;
+    font-family: 'Satoshi_Bold', sans-serif;
+    color: #111111;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.ct_cs_step_center {
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 5;
+}
+
+.ct_cs_step_dot {
+    width: 14px;
+    height: 14px;
+    background-color: #6F7070;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    opacity: 1 !important;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1), background-color 0.35s ease;
+}
+
+/* Active Dot State when filled on scroll */
+.ct_cs_step_dot.active,
+.ct_cs_step_dot_blue {
+    background-color: var(--brand-blue) !important;
+}
+
+.ct_cs_step_row:hover .ct_cs_step_dot {
+    transform: scale(1.25);
+    background-color: var(--brand-blue);
+}
+
+.ct_cs_step_right {
+    flex: 1 1 0;
+    width: 50%;
+    padding-left: 50px;
+    text-align: left;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ct_cs_step_text {
+    font-size: 24px;
+    line-height: 28px;
+    color: var(--secondary-color);
+    margin: 0;
+    max-width: 416px;
+    margin-left: auto;
+}
+
+
+
+/* --------------------------------------------------------------------------
+   5. Explore Our Work By Service Section (3x2 Grid)
+   -------------------------------------------------------------------------- */
+
+
+.ct_cs_services_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: linear-gradient(180deg, #1E7EB8 -1.12%, #FFFFFF 274.64%);
+    overflow: hidden;
+}
+
+.ct_cs_service_box {
+    padding: 147px 30px 34px;
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 390px;
+    transition: background-color 0.3s ease;
+    position: relative;
+    text-decoration: none;
+    color: #ffffff !important;
+}
+
+.ct_cs_service_box:nth-child(3n) {
+    border-right: none;
+}
+
+.ct_cs_service_box:nth-child(n + 4) {
+    border-bottom: none;
+}
+
+.ct_cs_service_box:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.ct_cs_box_title {
+    font-size: 28px;
+    line-height: 1.18;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 24px;
+    font-family: 'Satoshi_Bold', sans-serif;
+}
+
+.ct_cs_box_desc {
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 40px;
+    max-width: 365px;
+    font-family: 'Satoshi_Regular', sans-serif;
+}
+
+.ct_cs_box_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.92) !important;
+    text-decoration: none;
+    margin-top: auto;
+    font-family: 'Satoshi_Medium', sans-serif;
+    transition: gap 0.25s ease, color 0.25s ease;
+}
+
+.ct_cs_service_box:hover .ct_cs_box_link {
+    gap: 11px;
+    color: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Technology That Fits (Home Section Reused)
+   -------------------------------------------------------------------------- */
+.ct_cs_tech_section {
+    padding: 90px 0 110px 0;
+    background-color: #ffffff;
+}
+
+.ct_cs_tech_section .ct_fits_desc {
+    margin-bottom: 16px;
+    max-width: 480px;
+}
+
+.ct_cs_tech_section .ct_fits_desc:last-of-type {
+    margin-bottom: 40px;
+}
+
+.ct_cs_tech_section .ct_fits_stack_wrap {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+.ct_cs_tech_section .ct_fits_grid {
+    align-content: start;
+}
+
+/* --------------------------------------------------------------------------
+   7. CTA Banner Section (Have A Project That Could Be Our Next Case Study?)
+   -------------------------------------------------------------------------- */
+.ct_cs_cta_section {
+    padding: 60px 0;
+    background: linear-gradient(95.89deg, #E2EDF9 -241.24%, #1E7EB8 103.29%);
+
+}
+
+.ct_cs_cta_section .ct_about_sec_title {
+    letter-spacing: -0.5px;
+    margin-bottom: 26px;
+}
+
+.ct_cs_cta_section .ct_cta_desc {
+    max-width: 490px;
+    line-height: 27px;
+    margin-bottom: 34px;
+}
+
+.ct_cs_cta_section .ct_btn_discuss {
+    padding: 15px 36px;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    margin-top: 100px;
+}
+
+/* --------------------------------------------------------------------------
+   8. Responsive Media Queries
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+
+
+    .ct_cs_card_img_wrap {
+        margin-bottom: -36px;
+    }
+
+    .ct_cs_card_carzone .ct_cs_card_img_wrap,
+    .ct_cs_card_trophytalk .ct_cs_card_img_wrap {
+        margin-right: -40px;
+    }
+
+    .ct_cs_card_lifemoment .ct_cs_card_img_wrap,
+    .ct_cs_card_marineops .ct_cs_card_img_wrap {
+        margin-left: -40px;
+    }
+
+    .ct_cs_card_img {
+        max-height: 380px;
+    }
+
+    .ct_cs_service_box {
+        padding: 36px 30px 30px;
+        min-height: 280px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .ct_cs_services_grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ct_cs_service_box {
+        padding: 34px 26px 28px;
+        min-height: 270px;
+    }
+
+    .ct_cs_cta_section .ct_btn_discuss {
+        margin-top: 0px;
+    }
+
+
+    .ct_cs_service_box:nth-child(3n) {
+        border-right: 1px solid rgba(255, 255, 255, 0.45);
+    }
+
+    .ct_cs_service_box:nth-child(2n) {
+        border-right: none;
+    }
+
+    .ct_cs_service_box:nth-child(n + 4) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+    }
+
+    .ct_cs_service_box:nth-child(n + 5) {
+        border-bottom: none;
+    }
+
+    .ct_cs_hero_section {
+        padding: 80px 0 70px;
+    }
+
+    .ct_cs_card {
+        border-radius: 22px;
+    }
+
+    .ct_cs_card_inner {
+        padding: 38px 28px;
+        padding-bottom: 0px;
+    }
+
+    .ct_cs_card_img_wrap {
+        margin-top: 24px;
+        margin-bottom: 0 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        justify-content: center !important;
+    }
+
+    .ct_cs_card_img {
+        max-height: 320px;
+    }
+
+    /* Approach Timeline on Tablet */
+    .ct_cs_timeline_track {
+        left: 30px;
+        top: 82px;
+        bottom: 36px;
+    }
+
+    .ct_cs_step_row {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 64px;
+        padding-top: 56px;
+        padding-bottom: 56px;
+    }
+
+    .ct_cs_step_left {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: left;
+        justify-content: flex-start;
+        margin-bottom: 8px;
+    }
+
+    .ct_cs_step_center {
+        position: absolute;
+        left: 10px;
+        top: 70px;
+    }
+
+    .ct_cs_step_right {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .ct_cs_step_text {
+        max-width: 100%;
+        white-space: normal;
+    }
+}
+
+@media (max-width: 767px) {
+    .ct_cs_services_grid {
+        grid-template-columns: 1fr;
+        border-radius: 16px;
+    }
+
+    .ct_cs_service_box {
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.35) !important;
+        padding: 36px 26px;
+        min-height: auto;
+    }
+
+    .ct_cs_service_box:last-child {
+        border-bottom: none !important;
+    }
+}
+
+@media (max-width: 575px) {
+
+
+    .ct_cs_hero_title {
+        font-size: 34px;
+    }
+
+    .ct_cs_hero_desc {
+        font-size: 16px;
+    }
+
+    .ct_cs_card_title {
+        font-size: 28px;
+    }
+
+    .ct_cs_step_num {
+        font-size: 40px;
+    }
+
+    .ct_cs_step_title {
+        font-size: 17px;
+    }
+
+    .ct_cs_brand_title {
+        font-size: 24px;
+    }
+
+    .ct_brand_slider_2 {
+        margin-top: 18px;
+    }
+}

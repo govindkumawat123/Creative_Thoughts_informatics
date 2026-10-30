@@ -1,0 +1,683 @@
+/* ==========================================================================
+   Creative Thoughts Informatics - Our Team Page Stylesheet (our-team.css)
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Hero Banner Section
+   -------------------------------------------------------------------------- */
+.ct_team_hero_section {
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 268.26%);
+
+    padding: 90px 0 100px 0;
+    color: #ffffff;
+    position: relative;
+    overflow: hidden;
+}
+
+.ct_team_hero_content {
+    max-width: 580px;
+}
+
+.ct_team_hero_title {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+}
+
+.ct_team_hero_desc {
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 32px;
+    max-width: 535px;
+}
+
+.ct_team_hero_btn_wrap {
+    display: flex;
+    align-items: center;
+}
+
+/* 3x3 Team Mosaic Grid */
+.ct_team_mosaic_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.ct_team_mosaic_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    max-width: 470px;
+    aspect-ratio: 1 / 1;
+    margin-left: auto;
+}
+
+.ct_team_mosaic_item {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ct_team_mosaic_item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+
+
+.ct_mosaic_circle {
+    border-radius: 50%;
+}
+
+.ct_mosaic_blank {
+    background-color: #ffffff;
+}
+
+.ct_team_mosaic_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.ct_pos_user_1 {
+    object-position: center 18%;
+}
+
+.ct_pos_user_2 {
+    object-position: center 20%;
+}
+
+.ct_pos_user_3 {
+    object-position: center 15%;
+}
+
+.ct_pos_user_4 {
+    object-position: right;
+}
+
+.ct_pos_user_5 {
+    object-position: center 18%;
+}
+
+.ct_pos_user_6 {
+    object-position: center 20%;
+}
+
+.ct_team_btn_white_pill {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: var(--brand-blue) !important;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    padding: 13px 34px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ct_team_btn_white_pill span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_team_btn_white_pill::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0E6296;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_team_btn_white_pill:hover::before {
+    width: 100%;
+}
+
+.ct_team_btn_white_pill:hover {
+    color: #ffffff !important;
+    border-color: #0E6296;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.ct_team_btn_white_pill:hover span {
+    color: #ffffff !important;
+}
+
+/* --------------------------------------------------------------------------
+   2. Main Team Members Section
+   -------------------------------------------------------------------------- */
+
+
+
+.ct_team_sec_title {
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.ct_team_sec_sub {
+    color: var(--secondary-color);
+    line-height: 1.55;
+    max-width: 697px;
+}
+
+.ct_team_group_title {
+    text-transform: uppercase;
+    color: #111827;
+    letter-spacing: -0.3px;
+    font-weight: 700;
+}
+
+/* Member Card */
+.ct_team_card {
+    background: #EFF2F6;
+    border-radius: 18px;
+    border: none;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease;
+}
+
+.ct_team_card:hover {
+    transform: translateY(-5px);
+}
+
+.ct_team_card_img_wrap {
+    height: 336px;
+    background: linear-gradient(180deg, #1E7EB8 -34.08%, #FFFFFF 115.33%);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+}
+
+.ct_team_leadership_card .ct_team_card_img_wrap {
+    height: 415px;
+}
+
+.ct_team_card_img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: bottom center;
+    vertical-align: bottom;
+    display: block;
+    transition: transform 0.35s ease;
+}
+
+.ct_team_card:hover .ct_team_card_img {
+    transform: scale(1.03);
+}
+
+.ct_team_card_body {
+    padding: 14px 16px 16px 16px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ECEEF0;
+}
+
+.ct_team_card_header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.ct_team_card_name {
+    color: #111827;
+    margin-bottom: 4px;
+    line-height: 1.25;
+    font-size: 24px;
+}
+
+.ct_team_card_role {
+    display: block;
+    font-size: 14px;
+    color: var(--brand-blue);
+    letter-spacing: 0.2px;
+}
+
+.ct_team_linkedin_btn {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    color: #505E72;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.ct_team_linkedin_btn:hover {
+    background-color: transparent;
+    color: #0A66C2;
+}
+
+.ct_team_card_bio {
+    color: var(--secondary-color);
+    line-height: 1.55;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+
+
+
+/* --------------------------------------------------------------------------
+   3. Different Skills. One Team. Section
+   -------------------------------------------------------------------------- */
+
+
+.ct_skills_sec_sub {
+    max-width: 1049px;
+    color: var(--secondary-color);
+}
+
+.ct_team_skills_grid {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 36px;
+    flex-wrap: wrap;
+}
+
+.ct_team_skill_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.ct_team_skill_item:hover {
+    transform: translateY(-4px);
+}
+
+.ct_team_skill_circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: var(--brand-blue);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ct_team_skill_item:hover .ct_team_skill_circle {
+    background-color: #125A87;
+    transform: scale(1.05);
+}
+
+.ct_team_skill_icon {
+    color: #ffffff;
+    display: block;
+}
+
+.ct_team_skill_badge {
+    background-color: transparent;
+    color: var(--brand-blue);
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 6px;
+    display: block;
+    line-height: 1.2;
+    font-size: 28px;
+    letter-spacing: -0.2px;
+}
+
+.ct_team_skill_label {
+    color: #0F172A;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 1199px) {
+
+
+    .ct_team_skill_circle {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ct_team_skill_circle img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .ct_team_skill_badge {
+        font-size: 20px;
+        margin-top: 14px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .ct_team_skills_grid {
+        gap: 32px 18px;
+    }
+
+
+}
+
+
+/* --------------------------------------------------------------------------
+   4. How We Work Together Section
+   -------------------------------------------------------------------------- */
+
+
+.ct_team_how_card {
+    background: #ECEEF0;
+    border-radius: 16px;
+    border: none;
+    padding: 24px 28px 24px 28px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ct_team_how_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(10, 37, 64, 0.07);
+}
+
+.ct_team_how_num {
+    line-height: 1;
+    font-size: 72px;
+    color: var(--brand-blue);
+    display: block;
+    margin-bottom: 80px;
+}
+
+.ct_team_how_card_bottom {
+    margin-top: auto;
+}
+
+.ct_team_how_title {
+    color: #111827;
+    margin-bottom: 8px;
+    line-height: 1.3;
+    font-size: 24px;
+}
+
+.ct_team_how_desc {
+    color: var(--secondary-color);
+    line-height: 20px;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.ct_team_how_img_wrap {
+    border-radius: 24px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 480px;
+    display: flex;
+}
+
+.ct_team_how_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px;
+    transition: transform 0.4s ease;
+}
+
+.ct_team_how_img_wrap:hover .ct_team_how_img {
+    transform: scale(1.02);
+}
+
+.ct_team_how_visual_box {
+    background: linear-gradient(135deg, #1E7EB8 0%, #156B9E 100%);
+    border-radius: 20px;
+    height: 100%;
+    min-height: 420px;
+    box-shadow: 0 10px 30px rgba(30, 126, 184, 0.18);
+}
+
+/* --------------------------------------------------------------------------
+   5. CTA Section: Want To Be Part Of The Team?
+   -------------------------------------------------------------------------- */
+.ct_team_cta_section {
+    background-color: #ffffff;
+    padding-bottom: 120px;
+}
+
+.ct_team_cta_banner {
+    background: linear-gradient(95deg, #1E7EB8 0%, #176FA3 100%);
+    border-radius: 24px;
+    padding: 60px 56px;
+    box-shadow: 0 16px 40px rgba(30, 126, 184, 0.22);
+}
+
+.ct_team_cta_title {
+    line-height: 1.2;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+
+.ct_team_cta_desc {
+    line-height: 1.6;
+    margin-bottom: 32px;
+    opacity: 0.95;
+    max-width: 540px;
+}
+
+.ct_team_cta_btn_wrap {
+    display: flex;
+    align-items: center;
+}
+
+.ct_team_cta_btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #125A87;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    padding: 13px 32px;
+    text-decoration: none;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ct_team_cta_btn span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+.ct_team_cta_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_team_cta_btn:hover::before {
+    width: 100%;
+}
+
+.ct_team_cta_btn:hover {
+    color: var(--brand-blue) !important;
+    border-color: #ffffff;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
+.ct_team_cta_btn:hover span {
+    color: var(--brand-blue) !important;
+}
+
+.ct_team_cta_card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    min-height: 280px;
+}
+
+.ct_team_cta_img {
+    max-height: 260px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* --------------------------------------------------------------------------
+   6. Responsive Rules for Our Team Page
+   -------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .ct_team_hero_section {
+        padding: 60px 0 70px 0;
+    }
+
+    .ct_team_hero_content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .ct_team_mosaic_wrap {
+        justify-content: center;
+    }
+
+    .ct_team_mosaic_grid {
+        max-width: 380px;
+        margin: 0 auto;
+        gap: 12px;
+    }
+
+    .ct_team_how_img_wrap,
+    .ct_team_how_visual_box {
+        min-height: 320px;
+        margin-top: 20px;
+    }
+
+    .ct_team_how_num {
+        font-size: 56px;
+        margin-bottom: 16px;
+    }
+
+    .ct_team_how_card {
+        min-height: 240px;
+    }
+
+    .ct_team_cta_banner {
+        padding: 40px 30px;
+    }
+
+    .ct_team_skills_grid {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    .ct_team_skill_circle {
+        width: 80px;
+        height: 80px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+
+
+    .ct_team_cta_banner {
+        padding: 32px 20px;
+    }
+
+    .ct_team_cta_card {
+        margin-top: 24px;
+        min-height: 220px;
+    }
+
+    .ct_team_cta_img {
+        max-height: 200px;
+    }
+
+    .ct_team_skills_grid {
+        gap: 16px;
+    }
+
+
+
+}
+
+@media (max-width: 575px) {
+    .ct_team_mosaic_grid {
+        max-width: 300px;
+        gap: 10px;
+    }
+
+    .ct_team_skill_circle {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ct_team_skills_grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

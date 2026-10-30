@@ -1,0 +1,838 @@
+/* ==========================================================================
+   Career Page Stylesheet (career.css)
+   Creative Thoughts Informatics - Build Technology That Matters
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Career Hero Section
+   -------------------------------------------------------------------------- */
+.ct_career_hero_section {
+    position: relative;
+    background: linear-gradient(180deg, #1E7EB8 0%, #FFFFFF 268.26%);
+    overflow: hidden;
+    color: #ffffff;
+}
+
+.ct_career_hero_title {
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.ct_career_hero_desc {
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 1);
+    max-width: 540px;
+    margin-bottom: 36px;
+}
+
+.ct_career_hero_btn_wrap {
+    margin-top: 10px;
+}
+
+/* Vertical Swiper Photo / Collage Columns on Right */
+.ct_career_collage_wrap {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    height: calc(100dvh - 90px);
+    max-height: calc(100dvh - 90px);
+    overflow: hidden;
+}
+
+.ct_career_swiper_col {
+    width: 240px;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.ct_career_swiper_col .swiper-wrapper {
+    transition-timing-function: linear !important;
+}
+
+.ct_career_swiper_col .swiper-slide {
+    height: 280px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.ct_career_collage_card {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.35s ease;
+}
+
+.ct_career_collage_card:hover {
+    transform: scale(1.02);
+}
+
+.ct_career_collage_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   2. Why Work With Section
+   -------------------------------------------------------------------------- */
+
+
+
+.ct_career_sec_head {
+    margin-bottom: 44px;
+}
+
+.ct_career_sec_title {
+    font-size: 42px;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    color: #111827;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.ct_career_sec_sub {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4A5568;
+    max-width: 450px;
+}
+
+.ct_career_why_card {
+    background: #E0E0E080;
+    border-radius: 16px;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    padding: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+    border: none;
+}
+
+.ct_career_why_card:hover {
+    transform: translateY(-4px);
+}
+
+.ct_career_why_icon_box {
+    width: 64px;
+    height: 64px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--brand-blue);
+    margin-bottom: 50px;
+}
+
+.ct_career_why_svg_icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.ct_career_why_title {
+    font-size: 26px;
+    line-height: 1.25;
+    color: #0F172A;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: -0.2px;
+}
+
+.ct_career_why_desc {
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--secondary-color);
+    margin-bottom: 64px;
+    flex-grow: 1;
+}
+
+.ct_career_why_link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--brand-blue);
+    font-size: 12.5px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: auto;
+    transition: color 0.25s ease;
+}
+
+.ct_career_why_arrow {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 700;
+    transition: transform 0.25s ease;
+    display: inline-block;
+}
+
+.ct_career_why_card:hover .ct_career_why_arrow {
+    transform: translate(2px, -2px);
+}
+
+.ct_career_why_link:hover {
+    color: #125F8E;
+}
+
+/* --------------------------------------------------------------------------
+   3. Hiring Process Section
+   -------------------------------------------------------------------------- */
+
+
+.ct_career_process_img_wrap {
+    position: relative;
+    border-radius: 28px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 560px;
+}
+
+.ct_career_process_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 28px;
+}
+
+.ct_career_process_content {
+    padding-left: 20px;
+}
+
+.ct_career_process_timeline {
+    position: relative;
+    margin-top: 53px;
+}
+
+.ct_career_step_item {
+    position: relative;
+    background-color: #E0E0E080;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+    border: none;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease;
+}
+
+.ct_career_step_item:last-child {
+    margin-bottom: 0;
+}
+
+/* Vertical blue connecting line between cards */
+.ct_career_step_item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: -32px;
+    left: 54px;
+    width: 2px;
+    height: 32px;
+    background-color: var(--brand-blue);
+    z-index: 1;
+}
+
+.ct_career_step_item:hover {
+    transform: translateX(6px);
+    box-shadow: 0 10px 24px rgba(10, 37, 64, 0.06);
+}
+
+.ct_career_step_num {
+    font-size: 38px;
+    line-height: 1;
+    color: var(--brand-blue);
+    flex-shrink: 0;
+    min-width: 54px;
+    text-align: center;
+    letter-spacing: -0.5px;
+}
+
+.ct_career_step_divider {
+    width: 1px;
+    height: 36px;
+    background-color: #B8CBD8;
+    flex-shrink: 0;
+    margin: 0 24px;
+}
+
+.ct_career_step_info {
+    flex-grow: 1;
+}
+
+.ct_career_step_title {
+    font-size: 28px;
+    line-height: 1.25;
+    color: #111827;
+    margin-bottom: 4px;
+}
+
+.ct_career_step_desc {
+    font-size: 14px;
+    line-height: 1.45;
+    color: #4B6176;
+    margin-bottom: 0;
+}
+
+/* --------------------------------------------------------------------------
+   4. Job Openings Section
+   -------------------------------------------------------------------------- */
+.ct_career_jobs_section {
+    padding: 90px 0 100px 0;
+    background-color: #F7FCFF;
+}
+
+.ct_career_jobs_section .ct_career_sec_sub {
+    max-width: 680px;
+}
+
+.ct_career_search_wrap {
+    margin-bottom: 22px;
+}
+
+.ct_career_search_box {
+    position: relative;
+    width: 100%;
+}
+
+.ct_career_search_icon {
+    position: absolute;
+    left: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #8C9BAA;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.ct_career_search_input {
+    width: 100%;
+    height: 52px;
+    background: #ffffff;
+    border: 1px solid #DFE7EF;
+    border-radius: 50px;
+    padding: 0 24px 0 54px;
+    font-size: 14.5px;
+    color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 1px 4px rgba(10, 37, 64, 0.03);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ct_career_search_input:focus {
+    border-color: var(--brand-blue);
+    box-shadow: 0 0 0 3px rgba(30, 126, 184, 0.15);
+}
+
+.ct_career_search_input::placeholder {
+    color: #8C9BAA;
+}
+
+/* Filter Pills */
+.ct_career_filter_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+.ct_career_filter_pill {
+    background-color: #ffffff;
+    border: 1px solid #DFE7EF;
+    border-radius: 50px;
+    padding: 8px 22px;
+    font-size: 13.5px;
+    color: #555555;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(10, 37, 64, 0.02);
+}
+
+.ct_career_filter_pill:hover {
+    border-color: var(--brand-blue);
+    color: var(--brand-blue);
+}
+
+.ct_career_filter_pill.active {
+    background-color: var(--brand-blue);
+    border-color: var(--brand-blue);
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(30, 126, 184, 0.25);
+}
+
+/* Job Cards */
+.ct_career_job_card {
+    background: #ffffff;
+    border: 1px solid #EAEFF4;
+    border-radius: 20px;
+    padding: 32px 28px 26px 28px;
+    box-shadow: 0 4px 16px rgba(10, 37, 64, 0.03);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s ease, border-color 0.35s ease;
+}
+
+.ct_career_job_card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(10, 37, 64, 0.08);
+    border-color: #CFE2F3;
+}
+
+.ct_career_job_header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.ct_career_job_header_left {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.ct_career_job_icon_box {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.ct_career_icon_eng {
+    background-color: #EBF5FA;
+    color: #1E7EB8;
+}
+
+.ct_career_icon_design {
+    background-color: #FDF0F4;
+    color: #E14974;
+}
+
+.ct_career_icon_mobile {
+    background-color: #ECFDF5;
+    color: #10B981;
+}
+
+.ct_career_icon_cloud {
+    background-color: #FFFBEB;
+    color: #F59E0B;
+}
+
+.ct_career_job_dept {
+    font-size: 11.5px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 2px;
+}
+
+.ct_career_dept_eng {
+    color: #1E7EB8;
+}
+
+.ct_career_dept_design {
+    color: #E14974;
+}
+
+.ct_career_dept_mobile {
+    color: #10B981;
+}
+
+.ct_career_dept_cloud {
+    color: #F59E0B;
+}
+
+.ct_career_job_bookmark {
+    background: transparent;
+    border: none;
+    color: #94A3B8;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.ct_career_job_bookmark:hover {
+    color: var(--brand-blue);
+    transform: scale(1.15);
+}
+
+.ct_career_job_title {
+    font-size: 19px;
+    line-height: 1.32;
+    color: #111827;
+    margin-bottom: 0;
+}
+
+.ct_career_job_meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 18px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.ct_career_meta_item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13.5px;
+    color: #6C7A89;
+}
+
+.ct_career_meta_item i {
+    font-size: 13px;
+    color: #8C9BAA;
+}
+
+.ct_career_job_desc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #555555;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Tech Badges */
+.ct_career_tags_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.ct_career_tag {
+    background-color: #F1F5F9;
+    color: #475569;
+    border-radius: 50px;
+    padding: 4px 12px;
+    font-size: 12.5px;
+    line-height: 1.2;
+}
+
+/* Card Action Buttons */
+.ct_career_job_actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: auto;
+}
+
+.ct_career_btn_details {
+    position: relative;
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1.5px solid #1E7EB8;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #1E7EB8 !important;
+    font-size: 13.5px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ct_career_btn_details span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+/* Slide animation: Left overlay fills with brand blue */
+.ct_career_btn_details::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1E7EB8;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_career_btn_details:hover::before {
+    width: 100%;
+}
+
+.ct_career_btn_details:hover {
+    color: #ffffff !important;
+    border-color: #1E7EB8;
+    box-shadow: 0 8px 20px rgba(30, 126, 184, 0.28);
+}
+
+.ct_career_btn_details:hover span {
+    color: #ffffff !important;
+}
+
+.ct_career_btn_apply {
+    position: relative;
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E7EB8;
+    border: 1.5px solid #1E7EB8;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #ffffff !important;
+    font-size: 13.5px;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px rgba(30, 126, 184, 0.28);
+}
+
+.ct_career_btn_apply span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+/* Slide animation: Left overlay fills with white */
+.ct_career_btn_apply::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_career_btn_apply:hover::before {
+    width: 100%;
+}
+
+.ct_career_btn_apply:hover {
+    color: #1E7EB8 !important;
+    border-color: #1E7EB8;
+    box-shadow: 0 8px 24px rgba(30, 126, 184, 0.38);
+}
+
+.ct_career_btn_apply:hover span {
+    color: #1E7EB8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   5. Don't See The Right Opening CTA Section
+   -------------------------------------------------------------------------- */
+.ct_career_cta_section {
+    background: linear-gradient(95.08deg, #E2EDF9 -173.24%, #4695C4 103.2%);
+
+    text-align: center;
+    color: #ffffff;
+}
+
+.ct_career_cta_title {
+    font-size: 38px;
+    line-height: 1.25;
+    letter-spacing: -0.3px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.ct_career_cta_desc {
+    font-size: 15.5px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.95);
+    max-width: 820px;
+    margin: 0 auto 30px auto;
+}
+
+.ct_career_cta_btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E7EB8;
+    color: #ffffff !important;
+    border: 1px solid #1E7EB8;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-size: 13.5px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 14px rgba(20, 100, 160, 0.25);
+}
+
+.ct_career_cta_btn span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.35s ease;
+}
+
+/* Slide animation: Left overlay fills with white */
+.ct_career_cta_btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.ct_career_cta_btn:hover::before {
+    width: 100%;
+}
+
+.ct_career_cta_btn:hover {
+    color: #1E7EB8 !important;
+    border-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.ct_career_cta_btn:hover span {
+    color: #1E7EB8 !important;
+}
+
+/* --------------------------------------------------------------------------
+   6. Responsive Rules for Career Page
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+
+
+    .ct_career_process_img_wrap {
+        min-height: 440px;
+    }
+}
+
+@media (max-width: 991px) {
+
+
+    .ct_career_collage_wrap {
+        margin-top: 40px;
+        height: 440px;
+        max-height: 440px;
+    }
+
+    .ct_career_swiper_col {
+        width: 200px;
+    }
+
+    .ct_career_swiper_col .swiper-slide {
+        height: 230px !important;
+    }
+
+    .ct_career_process_content {
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .ct_career_process_img_wrap {
+        min-height: 380px;
+    }
+
+    .ct_career_cta_title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ct_career_hero_desc {
+        font-size: 17px;
+    }
+
+    .ct_career_why_section,
+    .ct_career_process_section,
+    .ct_career_jobs_section {
+        padding: 60px 0;
+    }
+
+    .ct_career_sec_title {
+        font-size: 32px;
+    }
+
+
+
+    .ct_career_step_num {
+        font-size: 28px;
+        min-width: 42px;
+    }
+
+    .ct_career_step_divider {
+        margin: 0 14px;
+        height: 28px;
+    }
+
+    .ct_career_step_item:not(:last-child)::after {
+        left: 39px;
+    }
+
+    .ct_career_job_actions {
+        flex-direction: column;
+    }
+
+    .ct_career_btn_details,
+    .ct_career_btn_apply {
+        width: 100%;
+    }
+
+    .ct_career_cta_title {
+        font-size: 28px;
+    }
+
+    .ct_career_cta_desc {
+        font-size: 16px;
+    }
+
+    .ct_career_collage_wrap {
+        height: 360px;
+        max-height: 360px;
+        gap: 12px;
+    }
+
+    .ct_career_swiper_col {
+        width: 155px;
+    }
+
+    .ct_career_swiper_col .swiper-slide {
+        height: 180px !important;
+    }
+}
